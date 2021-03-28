@@ -1,0 +1,14 @@
+<script src="{{asset('site/js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{asset('site/js/jquery-migrate-3.0.1.min.js')}}"></script>
+<script src="{{asset('site/js/jquery-ui.js')}}"></script>
+<script src="{{asset('site/js/popper.min.js')}}"></script>
+<script src="{{asset('site/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('site/js/owl.carousel.min.js')}}"></script>
+<script src="{{asset('site/js/mediaelement-and-player.min.js')}}"></script>
+<script src="{{asset('site/js/jquery.stellar.min.js')}}"></script>
+<script src="{{asset('site/js/jquery.countdown.min.js')}}"></script>
+<script src="{{asset('site/js/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('site/js/bootstrap-datepicker.min.js')}}"></script>
+<script src="{{asset('site/js/jquery.mask.js')}}"></script>
+<script src="{{asset('site/js/aos.js')}}"></script>
+<script src="{{asset('site/js/main.js')}}"></script>
