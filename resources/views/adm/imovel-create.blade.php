@@ -70,6 +70,7 @@
                           <option value="vr" {{old('tipo') == 'vr' ? 'selected="selected"' : ''}}>Venda Residencial</option>
                           <option value="vc" {{old('tipo') == 'vc' ? 'selected="selected"' : ''}}>Venda Comercial</option>
                           <option value="lc" {{old('tipo') == 'lc' ? 'selected="selected"' : ''}}>Locação Comercial</option>
+                          <option value="cf" {{old('tipo') == 'cf' ? 'selected="selected"' : ''}}>Condomínio Fechado</option>
                         </select>
                     </div>
                     <div class="form-group">

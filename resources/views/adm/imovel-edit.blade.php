@@ -71,6 +71,7 @@
                           <option value="vr" {{old('tipo',$imovel->tipo) == 'vr' ? 'selected="selected"' : ''}}>Venda Residencial</option>
                           <option value="vc" {{old('tipo',$imovel->tipo) == 'vc' ? 'selected="selected"' : ''}}>Venda Comercial</option>
                           <option value="lc" {{old('tipo',$imovel->tipo) == 'lc' ? 'selected="selected"' : ''}}>Locação Comercial</option>
+                          <option value="cf" {{old('tipo',$imovel->tipo) == 'cf' ? 'selected="selected"' : ''}}>Condomínio Fechado</option>
                         </select>
                     </div>
                     <div class="form-group">

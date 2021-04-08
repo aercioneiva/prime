@@ -23,8 +23,8 @@ class CreateImoveisTable extends Migration
             $table->integer('dormitorios');
             $table->integer('vagas');
             $table->double('valor', 15, 2);
-            $table->enum('tipo', ['vr','vc', 'lc'])
-            ->comment('vr = Venda Residencial, vc = Venda Comercial, lc = Locacao Comercial');
+            $table->enum('tipo', ['vr','vc', 'lc','cf'])
+            ->comment('vr = Venda Residencial, vc = Venda Comercial, lc = Locacao Comercial, cf = Condominio Fechado');
             $table->string('nome_imagem',200);
             $table->text('descricao');
             $table->enum('destacar', ['s','n'])

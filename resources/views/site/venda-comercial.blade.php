@@ -158,21 +158,31 @@
         </div>
 
         <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4">
+        <div class="col-md-6 col-lg-3 mb-6 acessos">
             <a href="{{route('venda.residencial')}}" class="service text-center border rounded">
-              <img style="margin-top:22px;" alt="Venda Residencial - Casas e Apartamentos à Venda em Maringá e Região" src="{{asset('site/images/venda-residencial.png')}}" class="icon">
+              <img style="margin-top:22px;" alt="Venda Residencial - Casas e Apartamentos à Venda em Maringá e Região" src="{{asset('site/images/venda-residencia.png')}}" class="icon">
               <h2 class="service-heading">Venda Residencial</h2>
               <p><span class="read-more">Casas e Apartamentos à Venda em Maringá e Região</span></p>
             </a>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
+          <br>
+          <div class="col-md-6 col-lg-3 mb-6 acessos">
+            <a href="{{route('condominio.fechado')}}" class="service text-center border rounded">
+              <img style="margin-top:22px;" alt="Venda Residencial - Casas e Apartamentos à Venda em Maringá e Região" src="{{asset('site/images/condominio-fechado.png')}}" class="icon">
+              <h2 class="service-heading">Condomínio Fechado</h2>
+              <p><span class="read-more">Imóveis à Venda em Condomínio Fechado</span></p>
+            </a>
+          </div>
+          <br>
+          <div class="col-md-6 col-lg-3 mb-6 acessos">
             <a href="{{route('venda.comercial')}}" class="service text-center border rounded">
               <img style="margin-top:22px;" alt="Venda Comercial - Lojas, Salões, Barracões e Pontos Comerciais à Venda em Maringá e Região" src="{{asset('site/images/venda-comercial.png')}}" class="icon">
               <h2 class="service-heading">Venda Comercial</h2>
               <p><span class="read-more">Lojas, Barracões e Salas Comerciais à Venda</span></p>
             </a>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
+          <br>
+          <div class="col-md-6 col-lg-3 mb-6 acessos">
             <a href="{{route('locacao.comercial')}}" class="service text-center border rounded">
               <img style="margin-top:22px;" alt="Venda Comercial - Lojas, Salões, Barracões e Pontos Comerciais Para Locação em Maringá e Região" src="{{asset('site/images/locacao-comercial.png')}}" class="icon">
               <h2 class="service-heading">Locação Comercial</h2>

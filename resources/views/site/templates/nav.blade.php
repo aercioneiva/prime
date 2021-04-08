@@ -16,9 +16,11 @@
                             <a data-toggle="collapse" alt="Lista de imóveis comerciais e residenciais Venda e Locação" data-target="#collapseItem0" aria-expanded="false" href="#">Imóveis</a>
                             <ul class="dropdown">
                                 <li class="{{($ativo) == 'imovel|vr' ? 'active retirabarra': ''}}"><a alt="Imóveis à Venda em Maringa - Casas e Apartamentos à Venda" href="{{route('venda.residencial')}}">Venda Residencial</a></li>
+                                <li class="{{($ativo) == 'imovel|cf' ? 'active retirabarra': ''}}"><a alt="Imóveis à Venda em condomínio fechado em Maringa - Casas e Apartamentos à Venda" href="{{route('condominio.fechado')}}">Imóveis em Condomínio Fechado</a></li>
                                 <li class="{{($ativo) == 'imovel|vc' ? 'active retirabarra': ''}}"><a alt="Sala, Salão, Sobreloja, Barracão e Pontos comerciais à Venda em Maringá e Região" href="{{route('venda.comercial')}}">Venda Comercial</a></li>
                                 <li class="{{($ativo) == 'imovel|lc' ? 'active retirabarra': ''}}"><a alt="Sala, Salão, Sobreloja, Barracão e Pontos comerciais Para Locação em Maringá e Região" href="{{route('locacao.comercial')}}">Locação Comercial</a></li>
-                                <li class="retirabarra {{($ativo) == 'imovel|pr' ? 'active retirabarra': ''}}"><span class="estrelaesquerda icon-star"></span><a alt="Quer vender ou aluguar o seu imóvel?" href="{{route('seja.prime')}}">Quero ser Prime</a><span class="estreladireita icon-star"></li>                          
+                                <li class="{{($ativo) == 'imovel|pr' ? 'active retirabarra': ''}}"><a alt="Quer vender ou aluguar o seu imóvel?" href="{{route('seja.prime')}}"> <span class="estrelaesquerda icon-star"></span>
+Quero ser Prime<span class="estreladireita icon-star"></span></a></li>                          
                             </ul>
                         </li>
                         <li class="{{($ativo) == 'empresa' ? 'active' : ''}}"><a lt="Silvio Iwata Prime empresa especializada em venda e locação de imóveis comerciais e residenciais" href="{{route('empresa')}}">Nossa Empresa</a></li>                 

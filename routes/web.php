@@ -4,6 +4,11 @@ use App\Imovel;
 use Illuminate\Http\Request;
 
 ##Site##
+Route::get('/404', function () {
+    $ativo = "";
+    return view('errors.404',compact('ativo'));
+})->name("404");
+
 Route::get('/', function () {
     $imoveis = Imovel::where('destacar','=','s')->orderBy('created_at', 'desc')->get();
     $ativo = "home";
@@ -43,6 +48,14 @@ Route::get('/locacao-comercial', function () {
     return view('site.locacao-comercial',compact('imoveis','ativo'));
 })->name("locacao.comercial");
 
+Route::get('/condominio-fechado', function () {
+    $ativo = "imovel|cf";
+    $imoveis = Imovel::where('tipo','=','cf')
+                    ->orderBy('created_at', 'desc')
+                    ->paginate(3);
+    return view('site.condominio',compact('imoveis','ativo'));
+})->name("condominio.fechado");
+
 Route::get('/venda-comercial', function () {
     $ativo = "imovel|vc";
     $imoveis = Imovel::where('tipo','=','vc')
@@ -61,7 +74,7 @@ Route::get('/venda-residencial', function () {
 
 Route::get('/agradecimento', function () {
     $ativo = "";
-    return view('site.mensagem-enviada','ativo');
+    return view('site.mensagem-enviada',compact('ativo'));
 })->name("agradecimento");
 
 Route::post('/contato', ['as' => 'contato.create', 'uses' => 'ContatoController@contato']);
@@ -69,7 +82,7 @@ Route::post('/proposta', ['as' => 'proposta.create', 'uses' => 'ContatoControlle
 Route::post('/seja-prime', ['as' => 'prime.create', 'uses' => 'ContatoController@prime']);
 
 ##ADM
-Route::group(['prefix'=> 'admin', 'as'=>'admin.', 'middleware' => []],function(){
+Route::group(['prefix'=> 'admin', 'as'=>'admin.', 'middleware' => ['auth']],function(){
 
     Route::post('/admin/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 

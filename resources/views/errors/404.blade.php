@@ -7,24 +7,24 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-W76JRRC');</script>
     <meta charset="utf-8">
-    <title>Silvio Iwata Prime - Mensagem enviada.</title>
-    <meta name="description" content="Mensagem enviada com sucesso. Entraremos em contato em breve.">
+    <title>Silvio Iwata Prime - Página não encontrada.</title>
+    <meta name="description" content="Utilize os links para acessar os imóveis.">
     <meta name="robots" content="noindex, nofollow">
-    <link rel="canonical" href="{{route('agradecimento')}}"/>
+    <link rel="canonical" href="{{route('404')}}"/>   
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:url" content="{{route('agradecimento')}}" />
-    <meta property="og:title" content="Silvio Iwata Prime - Mensagem Enviada." />
+    <meta property="og:url" content="{{route('404')}}" />
+    <meta property="og:title" content="Silvio Iwata Prime - Página não encontrada" />
     <meta property="og:image" content="logo.png" />
-     <meta property="og:description" content="Mensagem enviada com sucesso." />
+     <meta property="og:description" content="Página não encontrada - Utilize os links para ver novos imóveis." />
     <meta name="theme-color" content="#174d29">
     <meta property="business:contact_data:country_name" content="Brasil" />
-    <meta property="business:contact_data:website" content="{{route('agradecimento')}}" />
+    <meta property="business:contact_data:website" content="{{route('404')}}" />
     <meta property="business:contact_data:region" content="PR" />
     <meta property="business:contact_data:email" content="secretaria@silvioiwataprime.com.br" />
     <meta property="business:contact_data:phone_number" content="(44) 3226-4632" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="Mensagem enviada com sucesso. Entraremos em contato em breve."/>
-    <meta name="twitter:title" content="Silvio Iwata Prime - Mensagem enviada." />
+    <meta name="twitter:description" content="Utilize os links para acessar os imóveis."/>
+    <meta name="twitter:title" content="Silvio Iwata Prime - Página não encontrada." />
     <meta name="twitter:image" content="logo.png" />
     <meta name="geo.placename" content="-23.4220448710953, -51.94120016560046" />
     <meta name="geo.region" content="BR" />  
@@ -75,11 +75,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div style="background-color: #174d29; color:#d2aa4b;text-align: center;" class="alert" role="alert">
  
-  <p>   <h4>Recebemos sua mensagem com sucesso!</h4> <br> <h4>Entraremos em contato o mais breve possível.</h4></p>
+      <p><h4>Não conseguimos encontrar a página que procura.</h4> <br> <h4>Clique nos links abaixo para ver novos imóveis</h4></p>
   <hr>
  
 
-   <div><a class="text-white" href="{{route('home')}}">Voltar para home</a> <span class="mx-2 text-white">&bullet;</span> </div>
+   <div><a class="text-white" href="{{route('home')}}">Ir para o início do site</a> <span class="mx-2 text-white">&bullet;</span> </div>
 </div>
        <div class="site-section">
       <div class="container">
