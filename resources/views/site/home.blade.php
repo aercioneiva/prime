@@ -3,18 +3,14 @@
   <head>
     <title>Silvio Iwata Prime</title>
     @include('site.templates.css')
-  <style>
-    .detalhes-inicio{margin-bottom: 10px;}
-    .detalhes-inicio h3 {font-size: 0.8em; color: #fff; display: inline; padding-right: 5px;margin-bottom: 10px;}
-    .preco-inicio{margin-top:-10px;margin-bottom: 2px;}
-
-  </style>
-
   </head>
 
 
   <body>  
-
+  <style> body, html{margin: 0; height: 100%; overflow: hidden;}</style>  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W76JRRC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="paginainicial">
   <div class="site-loader"></div>
   
   <div class="site-wrap">
@@ -68,6 +64,7 @@
           </div>        
         </div>
       @endforeach 
+    </div>
     </div>
     @include('site.templates.js')
   </body>

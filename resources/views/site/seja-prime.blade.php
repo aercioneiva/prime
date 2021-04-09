@@ -136,11 +136,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         var currentTime = new Date().getHours();
         if (document.body) {
             if (7 <= currentTime && currentTime < 18) {
-            document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa.png')}})";
+            document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa.jpeg')}})";
             
             }
             else {
-                document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa-noite.jpg')}})";
+                document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa-noite.jpeg')}})";
             }
         }
 

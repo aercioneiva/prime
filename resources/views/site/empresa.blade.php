@@ -281,11 +281,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var currentTime = new Date().getHours();
         if (document.body) {
             if (7 <= currentTime && currentTime < 18) {
-            document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa.png')}})";
+            document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa.jpeg')}})";
             
             }
             else {
-                document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa-noite.jpg')}})";
+                document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa-noite.jpeg')}})";
             }
         }
 

@@ -27,7 +27,7 @@
                     </div>
                     <div class="form-group">
                         <label for="ref">Ref.</label>
-                        <input type="number" class="form-control" id="ref" placeholder="ref" name="ref" value="{{old('ref')}}">
+                        <input type="number" class="form-control" id="ref" placeholder="ref" name="ref" value="{{old('ref')}}" min="1">
                     </div>
                     <div class="form-group">
                         <label for="area">Área Total</label>
@@ -35,15 +35,15 @@
                     </div>
                     <div class="form-group">
                         <label for="dormitorio">Dormitório(s)</label>
-                        <input type="number" class="form-control" id="dormitorio" placeholder="Dormitório(s)" name="dormitorio" value="{{old('dormitorio')}}">
+                        <input type="number" class="form-control" id="dormitorio" placeholder="Dormitório(s)" name="dormitorio" value="{{old('dormitorio')}}" min="0">
                     </div>
                     <div class="form-group">
                         <label for="bwc">Bwc(s)</label>
-                        <input type="number" class="form-control" id="bwc" placeholder="Bwc(s)" name="bwc" value="{{old('bwc')}}">
+                        <input type="number" class="form-control" id="bwc" placeholder="Bwc(s)" name="bwc" value="{{old('bwc')}}" min="0">
                     </div>
                     <div class="form-group">
                         <label for="vaga">Vaga(s)</label>
-                        <input type="number" class="form-control" id="vaga" placeholder="Vaga(s)" name="vaga" value="{{old('vaga')}}">
+                        <input type="number" class="form-control" id="vaga" placeholder="Vaga(s)" name="vaga" value="{{old('vaga')}}" min="0">
                     </div>
                     <div class="form-group">
                         <!-- Máximo 1 foto -->

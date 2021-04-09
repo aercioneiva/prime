@@ -140,7 +140,7 @@
           <div class="col-md-12 text-center">
             <div class="site-pagination">
               @for ($i = 1; $i <= $imoveis->lastPage(); $i++)
-                <a href="{{route('locacao.comercial')}}?page={{$i}}" class="{{$imoveis->currentPage() == $i ? 'active' : ''}}" >{{$i}}</a>
+                <a href="{{route('condominio.fechado')}}?page={{$i}}" class="{{$imoveis->currentPage() == $i ? 'active' : ''}}" >{{$i}}</a>
               @endfor
             </div>
           </div>  

@@ -11,4 +11,4 @@
 <link rel="stylesheet" href="{{asset('site/fonts/flaticon/font/flaticon.css')}}">
 <link rel="stylesheet" href="{{asset('site/css/fl-bigmug-line.css')}}">      
 <link rel="stylesheet" href="{{asset('site/css/aos.css')}}">
-<link rel="stylesheet" href="{{asset('site/css/style.css?ver=3')}}">    
+<link rel="stylesheet" href="{{asset('site/css/style.css?ver=2')}}">    

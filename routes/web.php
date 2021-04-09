@@ -44,7 +44,7 @@ Route::get('/locacao-comercial', function () {
     $ativo = "imovel|lc";
     $imoveis = Imovel::where('tipo','=','lc')
                     ->orderBy('created_at', 'desc')
-                    ->paginate(3);
+                    ->paginate(9);
     return view('site.locacao-comercial',compact('imoveis','ativo'));
 })->name("locacao.comercial");
 
@@ -52,7 +52,7 @@ Route::get('/condominio-fechado', function () {
     $ativo = "imovel|cf";
     $imoveis = Imovel::where('tipo','=','cf')
                     ->orderBy('created_at', 'desc')
-                    ->paginate(3);
+                    ->paginate(9);
     return view('site.condominio',compact('imoveis','ativo'));
 })->name("condominio.fechado");
 
@@ -60,7 +60,7 @@ Route::get('/venda-comercial', function () {
     $ativo = "imovel|vc";
     $imoveis = Imovel::where('tipo','=','vc')
                     ->orderBy('created_at', 'desc')
-                    ->paginate(3);
+                    ->paginate(9);
     return view('site.venda-comercial',compact('imoveis','ativo'));
 })->name("venda.comercial");
 
@@ -68,7 +68,7 @@ Route::get('/venda-residencial', function () {
     $ativo = "imovel|vr";
     $imoveis = Imovel::where('tipo','=','vr')
                     ->orderBy('created_at', 'desc')
-                    ->paginate(3);
+                    ->paginate(9);
     return view('site.venda-residencial',compact('imoveis','ativo'));
 })->name("venda.residencial");
 

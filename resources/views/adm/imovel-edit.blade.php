@@ -36,15 +36,15 @@
                     </div>
                     <div class="form-group">
                         <label for="dormitorio">Dormitório(s)</label>
-                        <input type="number" class="form-control" id="dormitorio" placeholder="Dormitório(s)" name="dormitorio" value="{{old('dormitorio',$imovel->dormitorios)}}">
+                        <input type="number" class="form-control" id="dormitorio" placeholder="Dormitório(s)" name="dormitorio" value="{{old('dormitorio',$imovel->dormitorios)}}" min="0">
                     </div>
                     <div class="form-group">
                         <label for="bwc">Bwc(s)</label>
-                        <input type="number" class="form-control" id="bwc" placeholder="Bwc(s)" name="bwc" value="{{old('bwc',$imovel->bwc)}}">
+                        <input type="number" class="form-control" id="bwc" placeholder="Bwc(s)" name="bwc" value="{{old('bwc',$imovel->bwc)}}" min="0">
                     </div>
                     <div class="form-group">
                         <label for="vaga">Vaga(s)</label>
-                        <input type="number" class="form-control" id="vaga" placeholder="Vaga(s)" name="vaga" value="{{old('vaga',$imovel->vagas)}}">
+                        <input type="number" class="form-control" id="vaga" placeholder="Vaga(s)" name="vaga" value="{{old('vaga',$imovel->vagas)}}" min="0">
                     </div>
                     <div class="form-group">
                         <!-- Máximo 1 foto -->
