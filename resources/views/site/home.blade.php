@@ -1,7 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Silvio Iwata Prime</title>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W76JRRC');</script>
+    <meta charset="utf-8">
+    <title>Silvio Iwata Prime - Vendas e Locações Especiais - Imóveis Comerciais e Residenciais</title>
+    <meta name="description" content="Silvio Iwata Prime é a empresa ideal para você que deseja realizar bons negócios imobiliários e busca profissionais que superem as suas expectativas.">
+    <meta name="robots" content="index, follow">      
+    <link rel="canonical" href="{{route('home')}}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta property="og:url" content="{{route('home')}}" />
+    <meta property="og:title" content="Silvio Iwata Prime - Vendas e Locações Especiais - Imóveis Comerciais e Residenciais" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:description" content="Silvio Iwata Prime é a empresa ideal para você que deseja realizar bons negócios imobiliários e busca profissionais que superem as suas expectativas." />
+    <meta name="theme-color" content="#174d29">
+    <meta property="business:contact_data:country_name" content="Brasil" />
+    <meta property="business:contact_data:website" content="{{route('home')}}" />
+    <meta property="business:contact_data:region" content="PR" />
+    <meta property="business:contact_data:email" content="secretaria@silvioiwataprime.com.br" />
+    <meta property="business:contact_data:phone_number" content="(44) 3226-4632" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Silvio Iwata Prime é a empresa ideal para você que deseja realizar bons negócios imobiliários e busca profissionais que superem as suas expectativas."/>
+    <meta name="twitter:title" content="Silvio Iwata Prime - Vendas e Locações Especiais - Imóveis Comerciais e Residenciais" />
+    <meta name="twitter:image" content="logo.png" />
+    <meta name="geo.placename" content="-23.4220448710953, -51.94120016560046" />
+    <meta name="geo.region" content="BR" />  
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="format-detection" content="telephone=no">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Silvio Iwata Prime",
+      "url": "https://silvioiwataprime.com.br",
+      "logo": {
+      "@type": "ImageObject",
+      "url": "https://silvioiwataprime.com.br/logo.png",
+      "height": 600,
+      "width": 260
+      }
+    }
+    </script>
     @include('site.templates.css')
   </head>
 
