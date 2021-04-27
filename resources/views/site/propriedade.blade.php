@@ -47,28 +47,10 @@
     </script>
     @include('site.templates.css')  
     <style>
-    
-    @media only screen and (max-width: 600px) { 
-        .btn-success{
-      width: 100%;padding: 15px;position: fixed;color: white;top: 93%;z-index: 700;left: 0;
+      @media only screen and (max-width: 600px) {
+        .bg-white {text-align: center;}
       }
-    }
-    @media only screen and (min-width: 600px) {
-         .btn-success{
-          width: 50%;
-          padding: 15px;
-          position: fixed;
-          color: white;
-          top: 91%;
-          z-index: 700;
-          left: 25%;
-          right: 25%;
-          box-shadow: 0px 1px #6c9864;
-    }
-  
-    }
-   
-      </style>  
+    </style>  
   </head>
   <body>
   <!-- Google Tag Manager (noscript) -->

@@ -95,7 +95,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="row form-group">
                 <div class="col-md-12">
                   <label style="color:#1d5539" class="font-weight-bold" for="message" >Mensagem</label> 
-                  <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Digite sua mensagem aqui" name="mensagem"><{{old('mensagem')}}/textarea>
+                  <textarea id="message" cols="30" rows="5" class="form-control" placeholder="Digite sua mensagem aqui" name="mensagem">{{old('mensagem')}}</textarea>
                 </div>
               </div>
 
