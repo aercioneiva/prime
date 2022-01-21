@@ -27,7 +27,7 @@
                     </div>
                     <div class="form-group">
                         <label for="ref">Ref.</label>
-                        <input type="number" class="form-control" id="ref" placeholder="ref" name="ref" value="{{old('ref')}}" min="1">
+                        <input type="number" class="form-control" id="ref" placeholder="ref" name="ref" value="{{old('ref')}}" min="1" max="9999999999">
                     </div>
                     <div class="form-group">
                         <label for="area">Área Total</label>
@@ -35,15 +35,15 @@
                     </div>
                     <div class="form-group">
                         <label for="dormitorio">Dormitório(s)</label>
-                        <input type="number" class="form-control" id="dormitorio" placeholder="Dormitório(s)" name="dormitorio" value="{{old('dormitorio')}}" min="0">
+                        <input type="number" class="form-control" id="dormitorio" placeholder="Dormitório(s)" name="dormitorio" value="{{old('dormitorio')}}" min="0" max="99">
                     </div>
                     <div class="form-group">
                         <label for="bwc">Bwc(s)</label>
-                        <input type="number" class="form-control" id="bwc" placeholder="Bwc(s)" name="bwc" value="{{old('bwc')}}" min="0">
+                        <input type="number" class="form-control" id="bwc" placeholder="Bwc(s)" name="bwc" value="{{old('bwc')}}" min="0" max="99">
                     </div>
                     <div class="form-group">
                         <label for="vaga">Vaga(s)</label>
-                        <input type="number" class="form-control" id="vaga" placeholder="Vaga(s)" name="vaga" value="{{old('vaga')}}" min="0">
+                        <input type="number" class="form-control" id="vaga" placeholder="Vaga(s)" name="vaga" value="{{old('vaga')}}" min="0" max="99">
                     </div>
                     <div class="form-group">
                         <!-- Máximo 1 foto -->
@@ -71,6 +71,7 @@
                           <option value="vc" {{old('tipo') == 'vc' ? 'selected="selected"' : ''}}>Venda Comercial</option>
                           <option value="lc" {{old('tipo') == 'lc' ? 'selected="selected"' : ''}}>Locação Comercial</option>
                           <option value="cf" {{old('tipo') == 'cf' ? 'selected="selected"' : ''}}>Condomínio Fechado</option>
+                          <option value="lm" {{old('tipo') == 'lm' ? 'selected="selected"' : ''}}>Lançamentos</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -106,6 +107,7 @@
         centsSeparator: ',',
         thousandsSeparator: ''
     }).blur(); 
+   
   })
 </script>
 @endsection

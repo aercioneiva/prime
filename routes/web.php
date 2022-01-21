@@ -1,82 +1,18 @@
 <?php
 
-use App\Imovel;
-use Illuminate\Http\Request;
-
 ##Site##
-Route::get('/404', function () {
-    $ativo = "";
-    return view('errors.404',compact('ativo'));
-})->name("404");
-
-Route::get('/', function () {
-    $imoveis = Imovel::where('destacar','=','s')->orderBy('created_at', 'desc')->get();
-    $ativo = "home";
-    return view('site.home',compact('imoveis','ativo'));
-})->name("home");
-
-Route::get('/contato', function () {
-    $ativo = "contato";
-    return view('site.contato',compact('ativo'));
-})->name("contato");
-
-Route::get('/seja-prime', function () {
-    $ativo = "imovel|pr";
-    return view('site.seja-prime',compact('ativo'));
-})->name("seja.prime");
-
-Route::get('/empresa', function () {
-    $ativo = "empresa";
-    return view('site.empresa',compact('ativo'));
-})->name("empresa");
-
-Route::get('/propriedade/{id}', function (Request $request, $id) {
-    $ativo = "imovel";
-    $imovel = Imovel::with(['imagens'])->find($id);
-    $imoveis = Imovel::where('destacar','=','s')
-                    ->orderBy('created_at', 'desc')
-                    ->limit(3)
-                    ->get();
-    return view('site.propriedade',compact('imovel','imoveis','ativo'));
-})->name("propriedade");
-
-Route::get('/locacao-comercial', function () {
-    $ativo = "imovel|lc";
-    $imoveis = Imovel::where('tipo','=','lc')
-                    ->orderBy('created_at', 'desc')
-                    ->paginate(9);
-    return view('site.locacao-comercial',compact('imoveis','ativo'));
-})->name("locacao.comercial");
-
-Route::get('/condominio-fechado', function () {
-    $ativo = "imovel|cf";
-    $imoveis = Imovel::where('tipo','=','cf')
-                    ->orderBy('created_at', 'desc')
-                    ->paginate(9);
-    return view('site.condominio',compact('imoveis','ativo'));
-})->name("condominio.fechado");
-
-Route::get('/venda-comercial', function () {
-    $ativo = "imovel|vc";
-    $imoveis = Imovel::where('tipo','=','vc')
-                    ->orderBy('created_at', 'desc')
-                    ->paginate(9);
-    return view('site.venda-comercial',compact('imoveis','ativo'));
-})->name("venda.comercial");
-
-Route::get('/venda-residencial', function () {
-    $ativo = "imovel|vr";
-    $imoveis = Imovel::where('tipo','=','vr')
-                    ->orderBy('created_at', 'desc')
-                    ->paginate(9);
-    return view('site.venda-residencial',compact('imoveis','ativo'));
-})->name("venda.residencial");
-
-Route::get('/agradecimento', function () {
-    $ativo = "";
-    return view('site.mensagem-enviada',compact('ativo'));
-})->name("agradecimento");
-
+Route::get('/404', ['as' => '404', 'uses' => 'SiteController@error']);
+Route::get('/', ['as' => 'home', 'uses' => 'SiteController@index']);
+Route::get('/contato', ['as' => 'contato', 'uses' => 'SiteController@contato']);
+Route::get('/seja-prime', ['as' => 'seja.prime', 'uses' => 'SiteController@sejaPrime']);
+Route::get('/empresa', ['as' => 'empresa', 'uses' => 'SiteController@empresa']);
+Route::get('/propriedade/{id}', ['as' => 'propriedade', 'uses' => 'SiteController@propriedade']);
+Route::get('/locacao-comercial', ['as' => 'locacao.comercial', 'uses' => 'SiteController@locacao']);
+Route::get('/condominio-fechado', ['as' => 'condominio.fechado', 'uses' => 'SiteController@condominio']);
+Route::get('/lancamentos', ['as' => 'lancamentos', 'uses' => 'SiteController@lancamentos']);
+Route::get('/venda-comercial', ['as' => 'venda.comercial', 'uses' => 'SiteController@vendaComercial']);
+Route::get('/venda-residencial', ['as' => 'venda.residencial', 'uses' => 'SiteController@vendaResidencial']);
+Route::get('/agradecimento', ['as' => 'agradecimento', 'uses' => 'SiteController@agradecimento']);
 Route::post('/contato', ['as' => 'contato.create', 'uses' => 'ContatoController@contato']);
 Route::post('/proposta', ['as' => 'proposta.create', 'uses' => 'ContatoController@proposta']);
 Route::post('/seja-prime', ['as' => 'prime.create', 'uses' => 'ContatoController@prime']);
@@ -86,9 +22,7 @@ Route::group(['prefix'=> 'admin', 'as'=>'admin.', 'middleware' => ['auth']],func
 
     Route::post('/admin/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
-    Route::get('/', function () {
-        return redirect()->route('admin.imoveis.index');
-    });
+    Route::get('/', ['as' => '', 'uses' => 'ImovelController@home']);
 
     Route::get('/imoveis', ['as' => 'imoveis.index', 'uses' => 'ImovelController@index']);
     Route::get('/imoveis/create', ['as' => 'imoveis.create', 'uses' => 'ImovelController@create']);

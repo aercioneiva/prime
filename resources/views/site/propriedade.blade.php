@@ -110,7 +110,7 @@
             <span style="color:#f7c66c" class="d-inline-block  px-3 mb-3 property-offer-type rounded">Detalhes da propriedade</span>
             <!-- Título da propriedade-->
             <h1 style="color:#f7c66c"  class="mb-2">{{$imovel->titulo}}</h1>
-            <p  class="mb-5"><strong style="color:#f7c66c" class="h2  font-weight-bold">R${{number_format($imovel->valor,2,",",".")}}</strong></p>
+            <p  class="mb-5"><strong style="color:#f7c66c ; font-size: 1.5em;" class="h2  font-weight-bold">R${{number_format($imovel->valor,2,",",".")}}</strong></p>
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@
             <div class="bg-white">
               <div class="row mb-5">
                 <div class="col-md-6">
-                  <strong  style="color: #184d29;" class=" h1 mb-3">R${{number_format($imovel->valor,2,",",".")}}</strong>
+                  <strong  style="color: #184d29; font-size:2.3em" class=" h1 mb-3">R${{number_format($imovel->valor,2,",",".")}}</strong>
                 </div>
                 <div class="col-md-6">
                   <ul style="text-align: center;" class="property-specs-wrap mb-3 mb-lg-0  float-lg-right">

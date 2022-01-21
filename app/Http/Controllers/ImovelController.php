@@ -14,6 +14,10 @@ class ImovelController extends Controller
         return view('adm.imoveis');
     }
 
+    public function home(){
+        return redirect()->route('admin.imoveis.index');
+    }
+
     public function create(){
         return view('adm.imovel-create');
     }

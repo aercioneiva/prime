@@ -15,6 +15,7 @@
                         <li class="has-children {{(substr($ativo,0,6)) == 'imovel' ? 'active': ''}}" >
                             <a data-toggle="collapse" alt="Lista de imóveis comerciais e residenciais Venda e Locação" data-target="#collapseItem0" aria-expanded="false" href="#">Imóveis</a>
                             <ul class="dropdown">
+                                <li class="{{($ativo) == 'imovel|lm' ? 'active retirabarra': ''}}"><a alt="Lançamentos de Imóveis em Maringá - Apartamentos Prontos Para Morar, Em Obras e Na Planta." href="{{route('lancamentos')}}">Lançamentos</a></li>
                                 <li class="{{($ativo) == 'imovel|vr' ? 'active retirabarra': ''}}"><a alt="Imóveis à Venda em Maringa - Casas e Apartamentos à Venda" href="{{route('venda.residencial')}}">Venda Residencial</a></li>
                                 <li class="{{($ativo) == 'imovel|cf' ? 'active retirabarra': ''}}"><a alt="Imóveis à Venda em condomínio fechado em Maringa - Casas e Apartamentos à Venda" href="{{route('condominio.fechado')}}">Imóveis em Condomínio Fechado</a></li>
                                 <li class="{{($ativo) == 'imovel|vc' ? 'active retirabarra': ''}}"><a alt="Sala, Salão, Sobreloja, Barracão e Pontos comerciais à Venda em Maringá e Região" href="{{route('venda.comercial')}}">Venda Comercial</a></li>
@@ -25,7 +26,11 @@ Quero ser Prime<span class="estreladireita icon-star"></span></a></li>
                         </li>
                         <li class="{{($ativo) == 'empresa' ? 'active' : ''}}"><a lt="Silvio Iwata Prime empresa especializada em venda e locação de imóveis comerciais e residenciais" href="{{route('empresa')}}">Nossa Empresa</a></li>                 
                         <li class="{{($ativo) == 'contato' ? 'active' : ''}}"><a alt="Deseja comprar ou alugar um imóvel comercial ou residencial entre em contato com nossa equipe" href="{{route('contato')}}">Contato</a></li>
-                        <li><span class="fonemenu">  <img src="{{asset('site/images/fone.png')}}">&nbsp;44 3226-4632</span></li>  
+                        <li><span class="fonemenu">  <img src="{{asset('site/images/fone.png')}}"><a href="tel:+55-44-3226-4632">&nbsp;44 3226-4632</a>
+                        @if(($ativo) == 'home')
+                        <br><br> <h1 class="tituloini">Venda e Locação De Imóveis Comerciais e Residenciais <br> </h1>
+                        @endif
+                            </span></li>  
                     </ul>
                 </nav>
             </div>
