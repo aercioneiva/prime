@@ -141,7 +141,7 @@
             <div class="bg-white">
               <div class="row mb-5">
                 <div class="col-md-6">
-                  <strong  style="color: #184d29; font-size:2.3em" class=" h1 mb-3">R${{number_format($imovel->valor,2,",",".")}}</strong>
+                  <strong  style="color: #184d29; font-size:2.3em" class=" h1 mb-3">{{$imovel->tipo == 'lm' ? 'Consulte' : 'R$'.number_format($imovel->valor,2,",",".")}}</strong>
                 </div>
                 <div class="col-md-6">
                   <ul style="text-align: center;" class="property-specs-wrap mb-3 mb-lg-0  float-lg-right">
