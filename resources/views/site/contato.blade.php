@@ -16,15 +16,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:url" content="{{route('contato')}}" />
     <meta property="og:title" content="Silvio Iwata Prime - Entre em Contato Conosco." />
     <meta property="og:image" content="logo.png" />
-    <meta property="og:description" content="Envie uma mensagem através do formulário ou ligue para (44) 3226-4632." />
+    <meta property="og:description" content="Envie uma mensagem através do formulário ou ligue para (44) 4009-8981." />
     <meta name="theme-color" content="#174d29">
     <meta property="business:contact_data:country_name" content="Brasil" />
     <meta property="business:contact_data:website" content="{{route('contato')}}" />
     <meta property="business:contact_data:region" content="PR" />
-    <meta property="business:contact_data:email" content="secretaria@silvioiwataprime.com.br" />
-    <meta property="business:contact_data:phone_number" content="(44) 3226-4632" />
+    <meta property="business:contact_data:email" content="imobiliaria@silvioiwataprime.com.br" />
+    <meta property="business:contact_data:phone_number" content="(44) 4009-8981" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="Envie uma mensagem através do formulário ou ligue para (44) 3226-4632."/>
+    <meta name="twitter:description" content="Envie uma mensagem através do formulário ou ligue para (44) 4009-8981."/>
     <meta name="twitter:title" content="Silvio Iwata Prime - Entre em Contato Conosco." />
     <meta name="twitter:image" content="logo.png" />
     <meta name="geo.placename" content="-23.4220448710953, -51.94120016560046" />
@@ -71,7 +71,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="row align-items-center">
           <div class="col-6 col-md-6">
             <p class="mb-0">
-              <a style="color:#4e7b68;font-size:1.4em;font-weight:600;" href="#" class="mr-3"><span style="font-size:1.6em;margin-top: 5px;" class=" icon-phone"></span> <span class="d-none d-md-inline-block ml-2">(44) 3226-4632</span></a>
+              <a style="color:#4e7b68;font-size:1.4em;font-weight:600;" href="#" class="mr-3"><span style="font-size:1.6em;margin-top: 5px;" class=" icon-phone"></span> <span class="d-none d-md-inline-block ml-2">(44) 4009-8981</span></a>
               <a style="color:#4e7b68;font-size:1.4em;font-weight:600;margin-left: 40px;" href="#"><span style="font-size:1.6em;margin-top: 5px;" class=" icon-whatsapp"></span> <span class="d-none d-md-inline-block ml-2">(44) 9 9999-9999</span></a>
             </p>  
           </div>
@@ -88,7 +88,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @include('site.templates.nav')
     </div>
 
-    <div id="sitebg" class="site-blocks-cover inner-page-cover " data-aos="fade" data-stellar-background-ratio="0.1">
+    <div id="sitebg" class="site-blocks-cover inner-page-cover " data-stellar-background-ratio="0.1">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-md-10">
@@ -154,11 +154,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="p-4 mb-3 bg-white">
               <h3 style="color:#1d5539" class="h6  mb-3 text-uppercase">Informações de contato</h3>
               <p style="color:#1d5539" class="mb-0 font-weight-bold">Endereço</p>
-              <p class="mb-4">R. Néo Alves Martins, 2851 - Centro, Maringá - PR</p>
+              <p class="mb-4">Av. Dr. Gastão Vidigal, 851  Zona 08, Maringá - PR</p>
               <p style="color:#1d5539" class="mb-0 font-weight-bold">Telefone</p>
-              <p class="mb-4">(44) 3226-4632</p>
+              <p class="mb-4">(44) 4009-8981</p>
               <p style="color:#1d5539" class="mb-0 font-weight-bold">Email</p>
-              <p class="mb-0">secretaria@silvioiwataprime.com.br</p>
+              <p class="mb-0">imobiliaria@silvioiwataprime.com.br</p>
             </div>  
           </div>
         </div>

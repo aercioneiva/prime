@@ -20,8 +20,8 @@
     <meta property="business:contact_data:country_name" content="Brasil" />
     <meta property="business:contact_data:website" content="{{route('propriedade', ['id' => $imovel->id])}}" />
     <meta property="business:contact_data:region" content="PR" />
-    <meta property="business:contact_data:email" content="secretaria@silvioiwataprime.com.br" />
-    <meta property="business:contact_data:phone_number" content="(44) 3226-4632" />
+    <meta property="business:contact_data:email" content="imobiliaria@silvioiwataprime.com.br" />
+    <meta property="business:contact_data:phone_number" content="(44) 4009-8981" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="{{strip_tags($imovel->descricao)}}"/>
     <meta name="twitter:title" content="Silvio Iwata Prime - {{$imovel->titulo}}" />
@@ -74,7 +74,7 @@
         <div class="row align-items-center">
           <div class="col-6 col-md-6">
             <p class="mb-0">
-              <a style="color:#4e7b68;font-size:1.4em;font-weight:600;" href="#" class="mr-3"><span style="font-size:1.6em;margin-top: 5px;" class=" icon-phone"></span> <span class="d-none d-md-inline-block ml-2">(44) 3226-4632</span></a>
+              <a style="color:#4e7b68;font-size:1.4em;font-weight:600;" href="#" class="mr-3"><span style="font-size:1.6em;margin-top: 5px;" class=" icon-phone"></span> <span class="d-none d-md-inline-block ml-2">(44) 4009-8981</span></a>
               <a style="color:#4e7b68;font-size:1.4em;font-weight:600;margin-left: 40px;" href="#"><span style="font-size:1.6em;margin-top: 5px;" class=" icon-whatsapp"></span> <span class="d-none d-md-inline-block ml-2">(44) 9 9999-9999</span></a>
             </p>  
           </div>
@@ -288,7 +288,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-6 col-lg-3 mb-6 acessos">
             <a href="{{route('venda.residencial')}}" class="service text-center border rounded">
               <img style="margin-top:22px;" alt="Venda Residencial - Casas e Apartamentos à Venda em Maringá e Região" src="{{asset('site/images/venda-residencia.png')}}" class="icon">
@@ -318,6 +318,14 @@
               <img style="margin-top:22px;" alt="Venda Comercial - Lojas, Salões, Barracões e Pontos Comerciais Para Locação em Maringá e Região" src="{{asset('site/images/locacao-comercial.png')}}" class="icon">
               <h2 class="service-heading">Locação Comercial</h2>
               <p><span class="read-more">Lojas, Barracões e Salas Comerciais Para Locação</span></p>
+            </a>
+          </div>
+          <br>
+          <div class="col-md-6 col-lg-3 mb-6 acessos">
+            <a href="{{route('lancamentos')}}" class="service text-center border rounded">
+              <img alt="Apartamentos na planta, em obras e prontos para morar em Maringá e Região" src="{{asset('site/images/apartamentos-lancamentos.png')}}" class="icon">
+              <h2 class="service-heading">Lançamentos</h2>
+              <p><span class="read-more">Apartamentos na planta, em obras e prontos para morar</span></p>
             </a>
           </div>
         </div>

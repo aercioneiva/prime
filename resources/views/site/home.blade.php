@@ -20,8 +20,8 @@
     <meta property="business:contact_data:country_name" content="Brasil" />
     <meta property="business:contact_data:website" content="{{route('home')}}" />
     <meta property="business:contact_data:region" content="PR" />
-    <meta property="business:contact_data:email" content="secretaria@silvioiwataprime.com.br" />
-    <meta property="business:contact_data:phone_number" content="(44) 3226-4632" />
+    <meta property="business:contact_data:email" content="imobiliaria@silvioiwataprime.com.br" />
+    <meta property="business:contact_data:phone_number" content="(44) 4009-8981" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="Silvio Iwata Prime é a empresa ideal para você que deseja realizar bons negócios imobiliários e busca profissionais que superem as suas expectativas."/>
     <meta name="twitter:title" content="Silvio Iwata Prime - Vendas e Locações Especiais - Imóveis Comerciais e Residenciais" />
@@ -74,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row align-items-center">
           <div class="col-6 col-md-6">
             <p class="mb-0">
-              <a style="color:#4e7b68;font-size:1.4em;font-weight:600;" href="#" class="mr-3"><span style="font-size:1.6em;margin-top: 5px;" class=" icon-phone"></span> <span class="d-none d-md-inline-block ml-2">(44) 3226-4632</span></a>
+              <a style="color:#4e7b68;font-size:1.4em;font-weight:600;" href="#" class="mr-3"><span style="font-size:1.6em;margin-top: 5px;" class=" icon-phone"></span> <span class="d-none d-md-inline-block ml-2">(44) 4009-8981</span></a>
               <a style="color:#4e7b68;font-size:1.4em;font-weight:600;margin-left: 40px;" href="#"><span style="font-size:1.6em;margin-top: 5px;" class=" icon-whatsapp"></span> <span class="d-none d-md-inline-block ml-2">(44) 9 9999-9999</span></a>
             </p>  
           </div>

@@ -1,20 +1,11 @@
 /* Base */
 
-
-
-@media only screen and (max-width: 600px) {
-.estreladireita{ float: right;color: #d2aa4b;margin:5px 65px 0 -2px;}
-.estrelaesquerda{margin:5px 4px 0px -20px;float: left;color: #d2aa4b;}
-}
-@media only screen and (min-width: 600px) {
-.estrelaesquerda{margin:9px 0px 0 -18px;font-size:15px;float: left;color: #d2aa4b;}
-.estreladireita{float: right;color: #d2aa4b;font-size:15px;margin:10px 1px 0 0;}
-
-}
-
-
 .bg-white p{font-size: 1.2em;
             text-align: justify;}
+
+@media only screen and (min-width: 600px) {
+.bg-white p{font-size: 0.9em;text-align: justify;}
+}
 @media only screen and (max-width: 600px) {
 .bg-white {text-align: center;}
 }

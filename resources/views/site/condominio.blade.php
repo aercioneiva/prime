@@ -21,8 +21,8 @@
     <meta property="business:contact_data:country_name" content="Brasil" />
     <meta property="business:contact_data:website" content="{{route('condominio.fechado')}}" />
     <meta property="business:contact_data:region" content="PR" />
-    <meta property="business:contact_data:email" content="secretaria@silvioiwataprime.com.br" />
-    <meta property="business:contact_data:phone_number" content="(44) 3226-4632" />
+    <meta property="business:contact_data:email" content="imobiliaria@silvioiwataprime.com.br" />
+    <meta property="business:contact_data:phone_number" content="(44) 4009-8981" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="Silvio Iwata Prime - Vendas Especiais. Imóveis à Venda em Condomínio Fechado em Maringá. Veja a Lista De Imóveis Selecionados."/>
     <meta name="twitter:title" content="Silvio Iwata Prime - Imóveis à Venda em Condomínio Fechado em Maringá." />
