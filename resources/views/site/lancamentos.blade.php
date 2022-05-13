@@ -107,7 +107,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </figure>
                 <div class="prop-text">
                   <div class="inner">
-                    <span class="price rounded">R${{number_format($imovel->valor,2,",",".")}}</span>
+                    <span class="price rounded">Consulte?</span>
                     <h3 class="title">{{$imovel->titulo}}</h3>
                     <p class="location">{{$imovel->endereco}}</p>
                   </div>

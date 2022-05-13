@@ -33,7 +33,8 @@ class SiteController extends Controller
     public function propriedade(Request $request, $id){
         $ativo = "imovel";
         $imovel = Imovel::with(['imagens'])->find($id);
-        $imoveis = Imovel::where('destacar','=','s')
+        $tipo = $imovel->tipo;
+        $imoveis = Imovel::where('tipo','=',$tipo)
                         ->orderBy('created_at', 'desc')
                         ->limit(3)
                         ->get();

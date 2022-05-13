@@ -170,8 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 order-md-2" data-aos="fade-up" data-aos-delay="100">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.652517522909!2d-51.9092852!3d-23.436916300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd090c17a622b%3A0xf88462c219d27e7a!2sAv.%20Dr.%20Gast%C3%A3o%20Vidigal%2C%20851%20-%20Conj.%20Res.%20Cidade%20Alta%2C%20Maring%C3%A1%20-%20PR%2C%2087053-310!5e0!3m2!1spt-BR!2sbr!4v1651861655803!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
-          <div class="col-md-5 mr-auto order-md-1"  data-aos="fade-up" data-aos-delay="200">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.652517522909!2d-51.9092852!3d-23.436916300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd090c17a622b%3A0xf88462c219d27e7a!2sAv.%20Dr.%20Gast%C3%A3o%20Vidigal%2C%20851%20-%20Conj.%20Res.%20Cidade%20Alta%2C%20Maring%C3%A1%20-%20PR%2C%2087053-310!5e0!3m2!1spt-BR!2sbr!4v1651861655803!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>         <div class="col-md-5 mr-auto order-md-1"  data-aos="fade-up" data-aos-delay="200">
             <div class="site-section-title mb-3">
               <h2>Nossa localização</h2>
             </div>
@@ -194,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="col-md-6 col-lg-6 mb-5 mb-lg-5"  data-aos="fade-up" data-aos-delay="200">
               <div class="team-member p-4">
-                <img src="{{asset('site/images/Jordao.jpeg')}}" alt="Jordão Maio Filho - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+                <img src="{{asset('site/images/12JORDAO.jpg')}}" alt="Jordão Maio Filho - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
                 <div class="text">
                   <h2 style="color:#1d5539;" class="mb-2 font-weight-light  h4">Jordão Maio Filho</h2>
                   <span class="d-block mb-3 text-white-opacity-05"><a href="https://api.whatsapp.com/send?phone=5544999720237&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="" target="_blank"><img src="{{asset('site/images/whats.png')}}"> (44) 99972-0237</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> jordao@silvioiwataprime.com.br</span>
@@ -207,7 +206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="col-md-6 col-lg-6 mb-5 mb-lg-5"  data-aos="fade-up" data-aos-delay="300">
               <div class="team-member p-4">
-                <img src="{{asset('site/images/Edson.jpeg')}}" alt="Edson Naka - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+                <img src="{{asset('site/images/7NAKA.jpg')}}" alt="Edson Naka - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
                 <div class="text">
                   <h2 style="color:#1d5539;" class="mb-2 font-weight-light  h4">Edson Naka</h2>
                   <span class="d-block mb-3 text-white-opacity-05"><a href="https://api.whatsapp.com/send?phone=5544999720005&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."  target="_blank"><img src="{{asset('site/images/whats.png')}}"> (44) 99972-0005</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> edsonnaka@silvioiwataprime.com.br</span>
@@ -222,7 +221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-md-6 col-lg-6 mb-5 mb-lg-5"  data-aos="fade-up" data-aos-delay="400">
               <div class="team-member p-4">
 
-                <img src="{{asset('site/images/Vicente.jpeg')}}" alt="Vicente Khouri - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+                <img src="{{asset('site/images/16VICENTE.jpg')}}" alt="Vicente Khouri - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
 
                 <div class="text">
 

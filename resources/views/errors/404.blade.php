@@ -91,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-6 col-lg-3 mb-6 acessos">
               <a href="{{route('venda.residencial')}}" class="service text-center border rounded">
                 <img style="margin-top:22px;" alt="Venda Residencial - Casas e Apartamentos à Venda em Maringá e Região" src="{{asset('site/images/venda-residencial.png')}}" class="icon">
@@ -123,6 +123,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p><span class="read-more">Lojas, Barracões e Salas Comerciais Para Locação</span></p>
               </a>
             </div>
+            <br>
+          <div class="col-md-6 col-lg-3 mb-6 acessos">
+            <a href="{{route('lancamentos')}}" class="service text-center border rounded">
+              <img alt="Apartamentos na planta, em obras e prontos para morar em Maringá e Região" src="{{asset('site/images/apartamentos-lancamentos.png')}}" class="icon">
+              <h2 class="service-heading">Lançamentos</h2>
+              <p><span class="read-more">Apartamentos na planta, em obras e prontos para morar</span></p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -130,7 +138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 order-md-2" data-aos="fade-up" data-aos-delay="100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7322.0817261321745!2d-51.941421!3d-23.422891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd72c0f46767f%3A0x5d8d2fdcbc40b7a5!2sR.%20N%C3%A9o%20Alves%20Martins%2C%202851%20-%20Zona%2003%2C%20Maring%C3%A1%20-%20PR%2C%2087013-060%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1600351332395!5m2!1spt-BR!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.652517522909!2d-51.9092852!3d-23.436916300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd090c17a622b%3A0xf88462c219d27e7a!2sAv.%20Dr.%20Gast%C3%A3o%20Vidigal%2C%20851%20-%20Conj.%20Res.%20Cidade%20Alta%2C%20Maring%C3%A1%20-%20PR%2C%2087053-310!5e0!3m2!1spt-BR!2sbr!4v1651861655803!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="col-md-5 mr-auto order-md-1"  data-aos="fade-up" data-aos-delay="200">
             <div class="site-section-title mb-3">

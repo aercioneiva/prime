@@ -158,7 +158,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-6 col-lg-3 mb-6 acessos">
             <a href="{{route('venda.residencial')}}" class="service text-center border rounded">
               <img style="margin-top:22px;" alt="Venda Residencial - Casas e Apartamentos à Venda em Maringá e Região" src="{{asset('site/images/venda-residencia.png')}}" class="icon">
@@ -188,6 +188,14 @@
               <img style="margin-top:22px;" alt="Venda Comercial - Lojas, Salões, Barracões e Pontos Comerciais Para Locação em Maringá e Região" src="{{asset('site/images/locacao-comercial.png')}}" class="icon">
               <h2 class="service-heading">Locação Comercial</h2>
               <p><span class="read-more">Lojas, Barracões e Salas Comerciais Para Locação</span></p>
+            </a>
+          </div>
+          <br>
+          <div class="col-md-6 col-lg-3 mb-6 acessos">
+            <a href="{{route('lancamentos')}}" class="service text-center border rounded">
+              <img alt="Apartamentos na planta, em obras e prontos para morar em Maringá e Região" src="{{asset('site/images/apartamentos-lancamentos.png')}}" class="icon">
+              <h2 class="service-heading">Lançamentos</h2>
+              <p><span class="read-more">Apartamentos na planta, em obras e prontos para morar</span></p>
             </a>
           </div>
         </div>
