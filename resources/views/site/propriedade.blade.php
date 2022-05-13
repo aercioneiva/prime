@@ -110,7 +110,7 @@
             <span style="color:#f7c66c" class="d-inline-block  px-3 mb-3 property-offer-type rounded">Detalhes da propriedade</span>
             <!-- Título da propriedade-->
             <h1 style="color:#f7c66c"  class="mb-2">{{$imovel->titulo}}</h1>
-            <p  class="mb-5"><strong style="color:#f7c66c ; font-size: 1.5em;" class="h2  font-weight-bold">R${{number_format($imovel->valor,2,",",".")}}</strong></p>
+            <p  class="mb-5"><strong style="color:#f7c66c ; font-size: 1.5em;" class="h2  font-weight-bold">{{$imovel->tipo == 'lm' ? 'Consulte' : 'R$'.number_format($imovel->valor,2,",",".")}}</strong></p>
           </div>
         </div>
       </div>
@@ -245,7 +245,7 @@
                 </figure>
                 <div class="prop-text">
                   <div class="inner">
-                    <span class="price rounded">R${{number_format($imv->valor,2,",",".")}}</span>
+                    <span class="price rounded">{{$imv->tipo == 'lm' ? 'Consulte' : 'R$'.number_format($imv->valor,2,",",".")}}</span>
                     <h3 class="title">{{$imv->titulo}}</h3>
                     <p class="location">{{$imv->endereco}}</p>
                   </div>
