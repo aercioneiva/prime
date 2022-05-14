@@ -117,7 +117,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <br>
             <div class="col-md-6 col-lg-3 mb-6 acessos">
-              <a href="{{route('locacao.comercial')}}" class="service text-center border rounded">
+              <a href="https://www.silvioiwata.com.br/imoveis/locacao/comerciais-ou-industriais" target="_blank" class="service text-center border rounded">
                 <img style="margin-top:22px;" alt="Venda Comercial - Lojas, Salões, Barracões e Pontos Comerciais Para Locação em Maringá e Região" src="{{asset('site/images/locacao-comercial.png')}}" class="icon">
                 <h2 class="service-heading">Locação Comercial</h2>
                 <p><span class="read-more">Lojas, Barracões e Salas Comerciais Para Locação</span></p>
