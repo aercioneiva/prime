@@ -6,6 +6,9 @@
     RewriteEngine On
 
     
+    RewriteCond %{http_host} ^silvioiwataprime.com.br [NC]
+    RewriteRule ^(.*)$ https://www.silvioiwataprime.com.br/$1 [r=301,NC]
+
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -20,4 +23,6 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+
 </IfModule>

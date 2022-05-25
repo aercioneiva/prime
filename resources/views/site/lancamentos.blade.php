@@ -33,6 +33,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
     <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="adopt-website-id" content="5b571b37-c22d-49d2-acce-800ec98e624d" />
+    <script src="//tag.goadopt.io/injector.js?website_code=5b571b37-c22d-49d2-acce-800ec98e624d" class="adopt-injector"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -141,7 +144,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="col-md-12 text-center">
             <div class="site-pagination">
               @for ($i = 1; $i <= $imoveis->lastPage(); $i++)
-                <a href="{{route('locacao.comercial')}}?page={{$i}}" class="{{$imoveis->currentPage() == $i ? 'active' : ''}}" >{{$i}}</a>
+                <a href="{{route('lancamentos')}}?page={{$i}}" class="{{$imoveis->currentPage() == $i ? 'active' : ''}}" >{{$i}}</a>
               @endfor
             </div>
           </div>  

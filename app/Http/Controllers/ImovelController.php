@@ -33,11 +33,11 @@ class ImovelController extends Controller
             'vaga' => 'bail|required|numeric',
             'valor' => 'bail|required',
             'tipo' => 'bail|required',
-            'foto_principal' => 'bail|required|mimes:bmp,gif,jpeg,jpg,png',
+            'foto_principal' => 'bail|required|mimes:bmp,gif,jpeg,jpg,png,webp',
             'foto_slide' => 'bail|required',
             'foto_galeria' => 'bail|required',
-            'foto_slide.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png',
-            'foto_galeria.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png',
+            'foto_slide.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png,webp',
+            'foto_galeria.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png,webp',
             'descricao' => 'bail|required'
         ]);
 
@@ -133,9 +133,9 @@ class ImovelController extends Controller
             'valor' => 'bail|required',
             'tipo' => 'bail|required',
             'descricao' => 'bail|required',
-            'foto_principal' => 'bail|mimes:bmp,gif,jpeg,jpg,png',
-            'foto_slide.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png',
-            'foto_galeria.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png',
+            'foto_principal' => 'bail|mimes:bmp,gif,jpeg,jpg,png,webp',
+            'foto_slide.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png,webp',
+            'foto_galeria.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png,webp',
         ]);
         
         $imovel = Imovel::find($id);

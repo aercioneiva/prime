@@ -33,6 +33,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
     <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="adopt-website-id" content="5b571b37-c22d-49d2-acce-800ec98e624d" />
+    <script src="//tag.goadopt.io/injector.js?website_code=5b571b37-c22d-49d2-acce-800ec98e624d" class="adopt-injector"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
