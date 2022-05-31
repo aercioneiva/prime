@@ -8,8 +8,8 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     RewriteEngine On
 
-    RewriteCond %{http_host} ^silvioiwataprime.com.br [NC]
-    RewriteRule ^(.*)$ https://www.silvioiwataprime.com.br/$1 [r=301,NC]
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

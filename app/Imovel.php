@@ -9,7 +9,7 @@ class Imovel extends Model
     protected $table = 'imoveis';
 
     protected $fillable = [
-        'titulo', 'endereco', 'ref', 'area', 'bwc', 'dormitorios','vagas', 'valor', 'tipo','nome_imagem', 'descricao', 'destacar'
+        'titulo', 'endereco', 'ref', 'area', 'bwc', 'dormitorios','vagas', 'valor', 'tipo','nome_imagem','nome_imagem_mobile', 'descricao', 'destacar'
     ];
 
     public function imagens()

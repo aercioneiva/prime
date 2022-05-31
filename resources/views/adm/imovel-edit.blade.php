@@ -52,6 +52,11 @@
                         <input type="file" class="custom-file-input" id="foto_principal" name="foto_principal">
                     </div>
                     <div class="form-group">
+                        <!-- Máximo 1 foto -->
+                        <label for="exampleInputFile">Foto principal *Será apresentado em destaque e como background na página do imóvel (mobile)</label>
+                        <input type="file" class="custom-file-input" id="foto_principal_mobile" name="foto_principal_mobile">
+                    </div>
+                    <div class="form-group">
                         <!-- upload multiplo -->
                         <label for="exampleInputFile">Foto Slider *Slide na página do imóvel</label>
                         <input type="file" class="custom-file-input" id="foto_slide" name="foto_slide[]" multiple>

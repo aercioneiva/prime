@@ -321,28 +321,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
       <div class="team-member p-4">
-      <img src="{{asset('site/images/9FERNANDA.jpg')}}" alt="Fernanda Vic - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Fernanda Vic</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544999090454&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99909-0454 </a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> fernanda.vic@silvioiwataprime.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
-      <div class="team-member p-4">
-      <img src="{{asset('site/images/10JEAN.jpg')}}" alt="Jean Lamin - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Jean Lamin</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544991760017&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99176-0017</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> jean.lamin@silvioiwataprime.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
-      <div class="team-member p-4">
       <img src="{{asset('site/images/11JONATHAN.jpg')}}" alt="Jonathan Souza - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
       <div class="text">
       <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Jonatas de Souza</h2>

@@ -14,7 +14,7 @@
 
 .quemsomos{font-size: 1.4em;}
 .detalhes-inicio{margin-bottom: 10px;}
-  .detalhes-inicio h3 {font-size: 0.8em; color: #fff; display: inline; padding-right: 5px;margin-bottom: 10px;}
+  .detalhes-inicio h3 {font-size: 0.8em; color: #fff; display: inline; margin-bottom: 10px;}
   .preco-inicio{margin-top:-10px;margin-bottom: 2px;}
   @media only screen and (max-width: 600px) {
   .site-navbar {height: 100px;}
@@ -749,16 +749,14 @@ a {
     bottom: 90px;
     right: 10px;
     background: #fff;
-    padding: 8px 10px 15px 10px;    
-    max-width: 310px;
+    padding: 10px;    
+    max-width: 295px;
     border-radius: 10px;
-    background-color: #0b4343;;
+    background-color: rgb(11, 67, 67,0.8);
      box-shadow:0px 0px 10px #d9ba63}
     @media (max-width: 991.98px) {
       .site-blocks-cover .text {
-        padding: 20px;
-        left: 10px;
-        bottom:90px; } }
+        bottom:100px; } }
     .site-blocks-cover .text h2 {
       font-weight: 600;
       font-size: 20px;

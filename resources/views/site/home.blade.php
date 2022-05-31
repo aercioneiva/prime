@@ -48,6 +48,7 @@
       }
     }
     </script>
+    
     @include('site.templates.css')
   </head>
 
@@ -93,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       @include('site.templates.nav')
     </div>
-    <div class="slide-one-item home-slider owl-carousel">
+    <div class="slide-one-item home-slider owl-carousel " id="carouselWeb">
       @foreach ($imoveis as $imovel)
         <div class="site-blocks-cover" style="background-image: url({{asset('storage/'.$imovel->nome_imagem)}});" data-aos="fade">
           <div class="text">
@@ -111,7 +112,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       @endforeach 
     </div>
+    <div class="slide-one-item home-slider owl-carousel" id="carouselMobile">
+      @foreach ($imoveis as $imovel)
+        <div class="site-blocks-cover" style="background-image: url({{!empty($imovel->nome_imagem_mobile) ? asset('storage/'.$imovel->nome_imagem_mobile) : asset('storage/'.$imovel->nome_imagem)}})" data-aos="fade">
+          <div class="text">
+            <h2>{{$imovel->titulo}}</h2>
+            <p class="location"><span class="property-icon icon-room"></span>{{$imovel->endereco}} </p>             
+            <p class="preco-inicio"><strong>R${{number_format($imovel->valor,2,",",".")}}</strong></p>     
+            <div class="detalhes-inicio"> 
+              <h3><span style="color:#f2d16b;font-size: 1em;" class="icon-star"></span>{{$imovel->area}}m2</h3>
+              <h3><span style="color:#f2d16b;font-size: 1em;" class="icon-star"></span>{{$imovel->dormitorios}} Domirtório(s)</h3>
+              <h3><span style="color:#f2d16b;font-size: 1em;" class="icon-star"></span>{{$imovel->vagas}} Vagas</h3>
+            </div> 
+            
+            <p class="mb-0"><a href="{{route('propriedade', ['id' => $imovel->id])}}" class="text-uppercase small letter-spacing-1 font-weight-bold maisdetalhes">Mais Detalhes</a></p>          
+          </div>        
+        </div>
+      @endforeach 
+    </div>
+
     </div>
     @include('site.templates.js')
+    <script>
+      if (window.matchMedia("(min-width: 600px)").matches) {
+        document.getElementById("carouselMobile").style.display = 'none';
+      } else {
+        document.getElementById("carouselWeb").style.display = 'none';
+      }
+    </script>
   </body>
 </html>

@@ -34,6 +34,7 @@ class ImovelController extends Controller
             'valor' => 'bail|required',
             'tipo' => 'bail|required',
             'foto_principal' => 'bail|required|mimes:bmp,gif,jpeg,jpg,png,webp',
+            'foto_principal_mobile' => 'bail|required|mimes:bmp,gif,jpeg,jpg,png,webp',
             'foto_slide' => 'bail|required',
             'foto_galeria' => 'bail|required',
             'foto_slide.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png,webp',
@@ -63,6 +64,12 @@ class ImovelController extends Controller
             return back()->withErrors(['Erro ao fazer upload do arquivo'])->withInput();
         }
         $imovel->nome_imagem =  $upload;
+
+        $foto_principal_mobile = 'foto_principal_mobile'.rand(1, 9999).time().'.'.$request->foto_principal_mobile->extension();
+        $pasta = 'imoveis/'.$imovel->ref;
+        $upload = $request->foto_principal_mobile->storeAs($pasta, $foto_principal_mobile);
+
+        $imovel->nome_imagem_mobile =  $upload;
 
         DB::beginTransaction();
 
@@ -134,6 +141,7 @@ class ImovelController extends Controller
             'tipo' => 'bail|required',
             'descricao' => 'bail|required',
             'foto_principal' => 'bail|mimes:bmp,gif,jpeg,jpg,png,webp',
+            'foto_principal_mobile' => 'bail|mimes:bmp,gif,jpeg,jpg,png,webp',
             'foto_slide.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png,webp',
             'foto_galeria.*' => 'bail|mimes:bmp,gif,jpeg,jpg,png,webp',
         ]);
@@ -162,9 +170,23 @@ class ImovelController extends Controller
             if(Storage::disk('public')->exists("/".$imovel->nome_imagem)){
                 Storage::disk('public')->delete("/".$imovel->nome_imagem);
             }
-            
             $imovel->nome_imagem =  $upload;
         }
+
+        if($request->hasFile('foto_principal_mobile')){
+            $foto_principal_mobile = 'foto_principal_mobile'.rand(1, 9999).time().'.'.$request->foto_principal_mobile->extension();
+            $pasta = 'imoveis/'.$imovel->ref;
+            $upload = $request->foto_principal_mobile->storeAs($pasta, $foto_principal_mobile);
+
+            if(!$upload){
+                return back()->withErrors(['Erro ao fazer upload do arquivo'])->withInput();
+            }
+            if(Storage::disk('public')->exists("/".$imovel->nome_imagem)){
+                Storage::disk('public')->delete("/".$imovel->nome_imagem);
+            }
+            $imovel->nome_imagem_mobile =  $upload;
+        }
+
         $imovel->update();
 
         if($request->hasFile('foto_slide')){
