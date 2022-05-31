@@ -181,8 +181,8 @@ class ImovelController extends Controller
             if(!$upload){
                 return back()->withErrors(['Erro ao fazer upload do arquivo'])->withInput();
             }
-            if(Storage::disk('public')->exists("/".$imovel->nome_imagem)){
-                Storage::disk('public')->delete("/".$imovel->nome_imagem);
+            if(Storage::disk('public')->exists("/".$imovel->nome_imagem_mobile)){
+                Storage::disk('public')->delete("/".$imovel->nome_imagem_mobile);
             }
             $imovel->nome_imagem_mobile =  $upload;
         }
