@@ -105,7 +105,21 @@
     }
 
     </style>
-    <div class="site-blocks-cover overlay" style="background-image: url({{asset('storage/'.$imovel->nome_imagem)}});">
+    <div class="site-blocks-cover overlay" id="imagemWeb" style="background-image: url({{asset('storage/'.$imovel->nome_imagem)}});">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+
+            <span style="color:#f7c66c" class="d-inline-block  px-3 mb-3 property-offer-type rounded">Detalhes da propriedade</span>
+            <!-- Título da propriedade-->
+            <h1 style="color:#f7c66c"  class="mb-2">{{$imovel->titulo}}</h1>
+            <p  class="mb-5"><strong style="color:#f7c66c ; font-size: 1.5em;" class="h2  font-weight-bold">{{$imovel->tipo == 'lm' ? 'Consulte' : 'R$'.number_format($imovel->valor,2,",",".")}}</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-blocks-cover overlay" id="imagemMobile" style="background-image: url({{!empty($imovel->nome_imagem_mobile) ? asset('storage/'.$imovel->nome_imagem_mobile) : asset('storage/'.$imovel->nome_imagem)}});">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-md-10">
@@ -398,6 +412,12 @@
                         }  
                     });
         });
+
+      if (window.matchMedia("(min-width: 600px)").matches) {
+        document.getElementById("imagemMobile").style.display = 'none';
+      } else {
+        document.getElementById("imagemWeb").style.display = 'none';
+      }  
   </script>
   </body>
 </html>
