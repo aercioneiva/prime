@@ -141,14 +141,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
               <div class="row form-group">
                 <div class="col-md-12">
-                <div class=" g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}"></div>
-                  @if ($errors->has('g-recaptcha-response'))
-                    <span class="text-danger">{{ $errors->first('g-recaptcha-response') }}</span>
-                  @endif
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12">
                 <input style="background-color:#194d29;color:#fff;" type="submit" value="Enviar mensagem" class="btn py-2 px-4 rounded-0">
                 </div>
               </div>
@@ -193,7 +185,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 
     @include('site.templates.js')
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    
     <script type="text/javascript">
         var currentTime = new Date().getHours();
         if (document.body) {
