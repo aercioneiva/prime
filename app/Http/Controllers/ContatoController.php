@@ -6,17 +6,24 @@ use Illuminate\Http\Request;
 use App\Mail\EnviarEmailContato;
 use App\Mail\EnviarEmailProposta;
 use App\Mail\EnviarEmailPrime;
+use App\Rules\GoogleRecaptcha;
+
 
 class ContatoController extends Controller
 {
     public function contato(Request $request)
     {
-        $request->validate([
+        $this->validate(
+            $request,
+            [
             'nome' => 'bail|required',
             'telefone' => 'bail|required',
             'email' => 'bail|required|email',
-            'assunto' => 'bail|required'
-        ]);
+            'assunto' => 'bail|required',
+            'grecaptcha' => ['required', new GoogleRecaptcha()]
+        ],
+        ["grecaptcha.required" => "O campo recaptcha é obrigatório."]
+        );
         
 
         $remetente = new \stdClass;
