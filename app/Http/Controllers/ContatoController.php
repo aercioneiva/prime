@@ -19,10 +19,8 @@ class ContatoController extends Controller
             'nome' => 'bail|required',
             'telefone' => 'bail|required',
             'email' => 'bail|required|email',
-            'assunto' => 'bail|required',
-            'grecaptcha' => ['required', new GoogleRecaptcha()]
-        ],
-        ["grecaptcha.required" => "O campo recaptcha é obrigatório."]
+            'assunto' => 'bail|required'
+        ]
         );
         
 
