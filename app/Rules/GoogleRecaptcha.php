@@ -3,7 +3,7 @@
 namespace App\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
-use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Request;
 
 
 class GoogleRecaptcha implements Rule
@@ -27,9 +27,25 @@ class GoogleRecaptcha implements Rule
      */
     public function passes($attribute, $value)
     {
-        $client = new Client();
+        
+
+        $url = 'https://www.google.com/recaptcha/api/siteverify';
+        $secret = env('RECAPTCHA_SECRET_KEY', false);
+        $remoteip = $_SERVER['REMOTE_ADDR'];
+
+        $request = file_get_contents( $url.'?secret='.$secret.'&response='.$value.'&remoteip='.$remoteip);
+
+        $resposta = json_decode($request,true);
+
+        if(isset($resposta['success']) && $resposta['success'] == true && $resposta['score'] >=  env('RECAPTCHA_MINIMUM_SCORE', false)){
+            return true;
+        }
+
+        return false;
+        dd($resposta);
+        /*$client = new Client();
         try {
-            $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
+            $response = $client->post(, [
                 'form_params' => [
                     'secret' => env('RECAPTCHA_SECRET_KEY', false),
                     'response' => $value,
@@ -39,11 +55,11 @@ class GoogleRecaptcha implements Rule
         } catch (\GuzzleHttp\Exception\BadResponseException $e) {
             return false;
         }
-        return $this->getScore($response) >= 0.6;
+        return $this->getScore($response) >= 0.6;*/
     }
     private function getScore($response)
     {
-        return \GuzzleHttp\json_decode($response->getBody(), true)['score'];
+        //return \GuzzleHttp\json_decode($response->getBody(), true)['score'];
     }
     /**
      * Get the validation error message.

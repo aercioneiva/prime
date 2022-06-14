@@ -33,6 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:locale" content="pt_BR" />
     <meta name="format-detection" content="telephone=no">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="grecaptcha-key" content="{{env('RECAPTCHA_SITE_KEY')}}">
     <meta name="adopt-website-id" content="5b571b37-c22d-49d2-acce-800ec98e624d" />
     <script src="//tag.goadopt.io/injector.js?website_code=5b571b37-c22d-49d2-acce-800ec98e624d" class="adopt-injector"></script>
     <script type="application/ld+json">
@@ -113,7 +114,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="col-md-12 col-lg-8 mb-5">
             <h3 style="color:#1d5539">Possui imóvel para alugar ou vender?</h3>
             @include('alertas.alerts')
-            <form action="{{route('prime.create')}}" class="p-5 bg-white border" method="POST" autocomplete="off">
+            <form action="{{route('prime.create')}}" class="p-5 bg-white border" method="POST" autocomplete="off" data-grecaptcha-action="message">
               @csrf
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
@@ -173,6 +174,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 
     @include('site.templates.js')
+    <script src="https://www.google.com/recaptcha/api.js?render={{env('RECAPTCHA_SITE_KEY')}}"></script>
     <script type="text/javascript">
         var currentTime = new Date().getHours();
         if (document.body) {
@@ -219,6 +221,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             element.mask("(99) 9999-9999");  
                         }  
                     });
+        });
+
+        let grecaptchaKeyMeta = document.querySelector("meta[name='grecaptcha-key']");
+        let grecaptchaKey = grecaptchaKeyMeta.getAttribute("content");
+
+        grecaptcha.ready(function() {
+            let forms = document.querySelectorAll('form[data-grecaptcha-action]');
+
+            Array.from(forms).forEach(function (form) {
+                form.onsubmit = (e) => {
+                    e.preventDefault();
+
+                    let grecaptchaAction = form.getAttribute('data-grecaptcha-action');
+
+                    grecaptcha.execute(grecaptchaKey, {action: grecaptchaAction})
+                        .then((token) => {
+                            input = document.createElement('input');
+                            input.type = 'hidden';
+                            input.name = 'grecaptcha';
+                            input.value = token;
+
+                            form.append(input);
+
+                            form.submit();
+                        });
+                }
+            });
         });
     </script>  
   </body>

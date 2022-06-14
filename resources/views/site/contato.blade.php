@@ -34,6 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="format-detection" content="telephone=no">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="adopt-website-id" content="5b571b37-c22d-49d2-acce-800ec98e624d" />
+    <meta name="grecaptcha-key" content="{{env('RECAPTCHA_SITE_KEY')}}">
     <script src="//tag.goadopt.io/injector.js?website_code=5b571b37-c22d-49d2-acce-800ec98e624d" class="adopt-injector"></script>
     <script type="application/ld+json">
     {
@@ -185,7 +186,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 
     @include('site.templates.js')
-    
+    <script src="https://www.google.com/recaptcha/api.js?render={{env('RECAPTCHA_SITE_KEY')}}"></script>
 
     <script type="text/javascript">
         var currentTime = new Date().getHours();
@@ -234,6 +235,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         }  
                     });
         });
+
+        let grecaptchaKeyMeta = document.querySelector("meta[name='grecaptcha-key']");
+        let grecaptchaKey = grecaptchaKeyMeta.getAttribute("content");
+
+        grecaptcha.ready(function() {
+            let forms = document.querySelectorAll('form[data-grecaptcha-action]');
+
+            Array.from(forms).forEach(function (form) {
+                form.onsubmit = (e) => {
+                    e.preventDefault();
+
+                    let grecaptchaAction = form.getAttribute('data-grecaptcha-action');
+
+                    grecaptcha.execute(grecaptchaKey, {action: grecaptchaAction})
+                        .then((token) => {
+                            input = document.createElement('input');
+                            input.type = 'hidden';
+                            input.name = 'grecaptcha';
+                            input.value = token;
+
+                            form.append(input);
+
+                            form.submit();
+                        });
+                }
+            });
+        });
     </script>  
+    
   </body>
 </html>

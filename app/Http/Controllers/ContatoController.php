@@ -19,8 +19,10 @@ class ContatoController extends Controller
             'nome' => 'bail|required',
             'telefone' => 'bail|required',
             'email' => 'bail|required|email',
-            'assunto' => 'bail|required'
-        ]
+            'assunto' => 'bail|required',
+            'grecaptcha' => ['required', new GoogleRecaptcha]
+            ],
+            [ 'grecaptcha.required' => 'O campo recaptcha é obrigatório.']
         );
         
 
@@ -46,11 +48,16 @@ class ContatoController extends Controller
 
     public function proposta(Request $request)
     {
-        $request->validate([
-            'nome' => 'bail|required',
-            'telefone' => 'bail|required',
-            'email' => 'bail|required|email'
-        ]);
+        $this->validate(
+            $request,
+            [
+                'nome' => 'bail|required',
+                'telefone' => 'bail|required',
+                'email' => 'bail|required|email',
+                'grecaptcha' => ['required', new GoogleRecaptcha]
+            ],
+            [ 'grecaptcha.required' => 'O campo recaptcha é obrigatório.']
+        );
         
 
         $remetente = new \stdClass;
@@ -76,11 +83,15 @@ class ContatoController extends Controller
 
     public function prime(Request $request)
     {
-        $request->validate([
-            'nome' => 'bail|required',
-            'telefone' => 'bail|required',
-            'email' => 'bail|required|email'
-        ]);
+        $this->validate(
+            $request,[
+                'nome' => 'bail|required',
+                'telefone' => 'bail|required',
+                'email' => 'bail|required|email',
+                'grecaptcha' => ['required', new GoogleRecaptcha]
+            ],
+            [ 'grecaptcha.required' => 'O campo recaptcha é obrigatório.']
+        );
         
 
         $remetente = new \stdClass;
