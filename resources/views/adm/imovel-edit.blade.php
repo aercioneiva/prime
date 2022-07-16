@@ -14,10 +14,14 @@
                     @method('PUT')
                     @csrf
                     <div class="box-body">
-                        <div class="form-group">
-                            <label for="titulo">Título</label>
-                            <input type="text" class="form-control" id="titulo" placeholder="Título do imóvel" name="titulo" value="{{old('titulo',$imovel->titulo)}}">
-                        </div>
+                    <div class="form-group">
+                        <label for="titulo">Título</label>
+                        <input type="text" class="form-control" id="titulo" placeholder="Título do imóvel" name="titulo" value="{{old('titulo',$imovel->titulo)}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="titulo">Slug</label>
+                        <input type="text" class="form-control" id="slug" placeholder="" name="slug" value="{{old('slug',$imovel->slug)}}">
+                    </div>
                     <div class="form-group">
                         <label for="endereco">Endereço</label>
                         <input type="text" class="form-control" id="endereco" placeholder="Endereço" name="endereco" value="{{old('endereco',$imovel->endereco)}}">
@@ -114,6 +118,16 @@
         centsSeparator: ',',
         thousandsSeparator: ''
     }).blur(); 
-  })
+  });
+
+  $('#titulo').change(function(e){
+    $.get("{{route('admin.imoveis.slug')}}",
+    {'titulo': $(this).val()},
+    function(data){
+        console.log(data);
+        $('#slug').val(data.slug);
+    }
+    );
+  });
 </script>
 @endsection

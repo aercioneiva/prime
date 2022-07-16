@@ -30,9 +30,9 @@ class SiteController extends Controller
         return view('site.empresa',compact('ativo'));
     }
 
-    public function propriedade(Request $request, $id){
+    public function propriedade(Request $request, $id, $slug){
         $ativo = "imovel";
-        $imovel = Imovel::with(['imagens'])->find($id);
+        $imovel = Imovel::where('id','=',$id)->where('slug','=',$slug)->with(['imagens'])->first();
         $tipo = $imovel->tipo;
         $imoveis = Imovel::where('tipo','=',$tipo)
                         ->orderBy('created_at', 'desc')

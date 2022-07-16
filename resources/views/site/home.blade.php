@@ -107,7 +107,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <h3><span style="color:#f2d16b;font-size: 1em;" class="icon-star"></span>{{$imovel->vagas}} Vagas</h3>
             </div> 
             
-            <p class="mb-0"><a href="{{route('propriedade', ['id' => $imovel->id])}}" class="text-uppercase small letter-spacing-1 font-weight-bold maisdetalhes">Mais Detalhes</a></p>          
+            <p class="mb-0"><a href="{{route('propriedade', ['id' => $imovel->id, 'slug' => $imovel->slug])}}" class="text-uppercase small letter-spacing-1 font-weight-bold maisdetalhes">Mais Detalhes</a></p>          
           </div>        
         </div>
       @endforeach 
@@ -125,7 +125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <h3><span style="color:#f2d16b;font-size: 1em;" class="icon-star"></span>{{$imovel->vagas}} Vagas</h3>
             </div> 
             
-            <p class="mb-0"><a href="{{route('propriedade', ['id' => $imovel->id])}}" class="text-uppercase small letter-spacing-1 font-weight-bold maisdetalhes">Mais Detalhes</a></p>          
+            <p class="mb-0"><a href="{{route('propriedade', ['id' => $imovel->id, 'slug' => $imovel->slug])}}" class="text-uppercase small letter-spacing-1 font-weight-bold maisdetalhes">Mais Detalhes</a></p>          
           </div>        
         </div>
       @endforeach 

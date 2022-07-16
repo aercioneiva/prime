@@ -102,7 +102,7 @@
         <div class="row mb-5">
           @foreach ($imoveis as $imovel)
             <div class="col-md-6 col-lg-4 mb-4">
-              <a href="{{route('propriedade', ['id' => $imovel->id])}}" class="prop-entry d-block">
+              <a href="{{route('propriedade', ['id' => $imovel->id, 'slug' => $imovel->slug])}}" class="prop-entry d-block">
                 <figure>
                   <img src="{{asset('storage/'.$imovel->nome_imagem)}}" alt="Image" class="img-fluid">
                 </figure>

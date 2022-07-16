@@ -10,15 +10,15 @@
     <title>Silvio Iwata Prime - {{$imovel->titulo}}</title>
     <meta name="description" content="{{strip_tags($imovel->descricao)}}">    
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{{route('propriedade', ['id' => $imovel->id])}}"/>
+    <link rel="canonical" href="{{route('propriedade', ['id' => $imovel->id, 'slug' => $imovel->slug])}}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:url" content="{{route('propriedade', ['id' => $imovel->id])}}" />
+    <meta property="og:url" content="{{route('propriedade', ['id' => $imovel->id, 'slug' => $imovel->slug])}}" />
     <meta property="og:title" content="Silvio Iwata Prime - {{$imovel->titulo}}" />
     <meta property="og:image" content="logo.png" />
     <meta property="og:description" content="{{strip_tags($imovel->descricao)}}" />
     <meta name="theme-color" content="#174d29">
     <meta property="business:contact_data:country_name" content="Brasil" />
-    <meta property="business:contact_data:website" content="{{route('propriedade', ['id' => $imovel->id])}}" />
+    <meta property="business:contact_data:website" content="{{route('propriedade', ['id' => $imovel->id, 'slug' => $imovel->slug])}}" />
     <meta property="business:contact_data:region" content="PR" />
     <meta property="business:contact_data:email" content="imobiliaria@silvioiwataprime.com.br" />
     <meta property="business:contact_data:phone_number" content="(44) 4009-8981" />
@@ -257,7 +257,7 @@
         <div class="row mb-5">
           @foreach ($imoveis as $imv)
             <div class="col-md-6 col-lg-4 mb-4">
-              <a  href="{{route('propriedade', ['id' => $imv->id])}}" class="prop-entry d-block">
+              <a  href="{{route('propriedade', ['id' => $imv->id, 'slug' => $imv->slug])}}" class="prop-entry d-block">
                 <figure>
                   <img src="{{asset('storage/'.$imv->nome_imagem)}}" alt="Image" class="img-fluid">
                 </figure>

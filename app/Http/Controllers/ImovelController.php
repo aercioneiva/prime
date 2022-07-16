@@ -7,6 +7,7 @@ use App\Imovel;
 use App\ImovelImage;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class ImovelController extends Controller
 {
@@ -25,6 +26,7 @@ class ImovelController extends Controller
     public function store(Request $request){
         $request->validate([
             'titulo' => 'bail|required',
+            'slug' => 'bail|required',
             'endereco' => 'bail|required',
             'ref' => 'bail|required|unique:imoveis|numeric',
             'area' => 'bail|required',
@@ -45,6 +47,7 @@ class ImovelController extends Controller
 
         $imovel = new Imovel();
         $imovel->titulo = $request->input('titulo');
+        $imovel->slug = $request->input('slug');
         $imovel->endereco = $request->input('endereco');
         $imovel->ref = $request->input('ref');
         $imovel->area = formataMoedaBd($request->input('area'));
@@ -132,6 +135,7 @@ class ImovelController extends Controller
     public function update(Request $request, $id){
         $request->validate([
             'titulo' => 'bail|required',
+            //'slug' => 'bail|required',
             'endereco' => 'bail|required',
             'area' => 'bail|required',
             'bwc' => 'bail|required|numeric',
@@ -149,6 +153,7 @@ class ImovelController extends Controller
         $imovel = Imovel::find($id);
 
         $imovel->titulo = $request->input('titulo');
+        $imovel->slug = $request->input('slug') ?? '';
         $imovel->endereco = $request->input('endereco') ;
         $imovel->area = formataMoedaBd($request->input('area'));
         $imovel->bwc = $request->input('bwc') ;
@@ -252,5 +257,20 @@ class ImovelController extends Controller
         return response()->json([
             'success' => 'Imagem deletado com sucesso! '.$imovelImagem->id
         ]);
+    }
+
+    public function generateSlug(Request $request){
+
+        $slug = Str::slug($request->titulo);
+        return response()->json(['slug' => $slug]);
+    }
+
+    public function generateSlugGeral(){
+        foreach(Imovel::all() as $imovel){
+            $slug = Str::slug($imovel->titulo);
+            $imovel->slug = $slug;
+            $imovel->update();
+        }
+        echo 'Terminou';
     }
 }
