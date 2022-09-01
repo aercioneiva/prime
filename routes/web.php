@@ -34,12 +34,14 @@ Route::group(['prefix'=> 'admin', 'as'=>'admin.', 'middleware' => ['auth']],func
     Route::put('/imoveis/{id}', ['as' => 'imoveis.update', 'uses' => 'ImovelController@update']);
     Route::delete('/imoveis/{id}', ['as' => 'imoveis.delete', 'uses' => 'ImovelController@delete']);
     Route::get('/ajax', ['as' => 'imoveis.ajax', 'uses' => 'ImovelController@ajax']);
-    Route::get('/imoveis/gerarSlug', ['as' => 'imoveis.slugGeral', 'uses' => 'ImovelController@generateSlugGeral']);
+##    Route::get('/imoveis/gerarSlug', ['as' => 'imoveis.slugGeral', 'uses' => 'ImovelController@generateSlugGeral']);
 });
 
 //Auth::routes();
 Route::post('/admin/login', ['uses' => 'Auth\LoginController@login']);
 Route::get('/admin/login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
+##Route::get('/imoveis/gerarSlug', ['as' => 'imoveis.slugGeral', 'uses' => 'ImovelController@generateSlugGeral']);
+
 
 
 
