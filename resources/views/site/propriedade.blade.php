@@ -226,7 +226,7 @@
           <div class="col">
 
           <a  class="btn btn-success" data-toggle="" href="#collapseproposta" role="button" aria-expanded="false" aria-controls="collapseproposta">
-            Enviar Proposta
+            Entre em contato
             </a>
           <div id="collapseproposta"  class="collapse bg-white widget border rounded">
           @include('alertas.alerts')

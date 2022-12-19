@@ -305,17 +305,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
       <div class="team-member p-4">
-      <img src="{{asset('site/images/4ALINE.jpg')}}" alt="Aline Carvalho - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Aline Araujo</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544997117859&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99711-7859 </a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> aline.araujo@silvioiwataprime.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
-      <div class="team-member p-4">
       <img src="{{asset('site/images/5ANAPAULA.jpg')}}" alt="Ana Paula - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
       <div class="text">
       <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Ana Paula</h2>
@@ -325,6 +314,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       </div>
       </div>
+      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+	      <div class="team-member p-4">
+	      	<img src="{{asset('site/images/ANDERSON-COSTA.jpeg')}}" alt="Anderson Costa - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+	     	 <div class="text">
+	     		 <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Anderson Costa</h2>
+	     		 <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544991391818&amp;text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><img src="{{asset('site/images/whats.png')}}">(44) 99139-1818 </a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> anderson.costa@silvioiwataprime.com.br</span>
+	     		 <p> </p>	      			
+	    	  </div>
+	      </div>
+	    </div>
       <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
       <div class="team-member p-4">
       <img src="{{asset('site/images/6ANNAKARLA.jpg')}}" alt="Anna Karla - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
