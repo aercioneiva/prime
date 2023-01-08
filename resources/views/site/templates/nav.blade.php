@@ -25,7 +25,7 @@
                         </li>
                         <li class="{{($ativo) == 'empresa' ? 'active' : ''}}"><a lt="Silvio Iwata Prime empresa especializada em venda e locação de imóveis comerciais e residenciais" href="{{route('empresa')}}">Nossa Empresa</a></li>                 
                         <li class="{{($ativo) == 'contato' ? 'active' : ''}}"><a alt="Deseja comprar ou alugar um imóvel comercial ou residencial entre em contato com nossa equipe" href="{{route('contato')}}">Contato</a></li>
-                        <li><span class="fonemenu">  <img src="{{asset('site/images/fone.png')}}"><a href="tel:+55-44-99129-3515"> &nbsp;(44) 9 9129-3515</a>
+                        <li><span class="fonemenu">  <img src="{{asset('site/images/fone.png')}}"><a href="tel:+55-44-99129-3515"> &nbsp;(44) 9 9907-8882</a>
                         @if(($ativo) == 'home')
                         <br><br> <h1 class="tituloini">Venda e Locação De Imóveis Comerciais e Residenciais <br> </h1>
                         @endif
