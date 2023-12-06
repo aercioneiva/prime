@@ -16,6 +16,7 @@ Route::get('/agradecimento', ['as' => 'agradecimento', 'uses' => 'SiteController
 Route::post('/contato', ['as' => 'contato.create', 'uses' => 'ContatoController@contato']);
 Route::post('/proposta', ['as' => 'proposta.create', 'uses' => 'ContatoController@proposta']);
 Route::post('/seja-prime', ['as' => 'prime.create', 'uses' => 'ContatoController@prime']);
+Route::get('/politica-de-privacidade', ['as' => 'politica', 'uses' => 'SiteController@politica']);
 
 ##ADM
 Route::group(['prefix'=> 'admin', 'as'=>'admin.', 'middleware' => ['auth']],function(){

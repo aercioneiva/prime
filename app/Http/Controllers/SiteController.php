@@ -90,4 +90,9 @@ class SiteController extends Controller
         $ativo = "";
         return view('errors.404',compact('ativo'));
     }
+
+    public function politica(){
+        $ativo = "";
+        return view('site.politica-privacidade',compact('ativo'));
+    }
 }
