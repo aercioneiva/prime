@@ -145,8 +145,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    
-
     <div class="site-section border-bottom bg-light">
       <div class="container">
         <div class="row align-items-center">
@@ -160,27 +158,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="site-section-title mb-3">
               <h2>Silvio Iwata Prime</h2>
             </div>
-
-
-
-              <p class="quemsomos"><span style="color:#1d5539;">Nosso DNA:</span><br>
-
-            
-              <b>Quem já chegou longe, sabe que sempre pode ir além.</b> Assim surgiu a Silvio Iwata Prime, criada para transformar sua experiência de comprar, vender ou alugar um imóvel. Com uma forte cultura de investimento assertivo, nosso time de especialistas é focado em buscar o melhor equilíbrio na hora da escolha do seu imóvel. 
-              </p>
-              <p class="quemsomos" ><span style="color:#1d5539;">História:</span><br>
-           
-              Fundada no primeiro dia do mês de outubro de 1993, a Silvio Iwata Prime, empresa parceira da Imobiliária Silvio Iwata, atua no mercado imobiliário de Maringá e região. Criada com o intuito de oferecer a melhor experiência na hora da compra de um imóvel, sempre se destacou pelo atendimento personalizado e diferenciado; <b>fazemos vendas especiais para clientes especiais.</b>
-              </p>
-              <p class="quemsomos">
-              Nossos corretores são altamente qualificados, tendo como marca registrada a discrição e sigilo dos clientes, e um apurado faro de negócios.
-              </p>
-              <p class="quemsomos">
-              Em seus 28 anos, a Silvio Iwata Prime se caracteriza por ser uma empresa especializada em imóveis diferenciados, com total acompanhamento da compra ou venda de imóveis, desde o início até o final da transação.</p>
-              <p class="quemsomos">
-              A Silvio Iwata Prime é o próximo passo da experiência imobiliária.
-             </p>
-
+            <p class="quemsomos"><span style="color:#1d5539;">Nosso DNA:</span><br>
+            <b>Quem já chegou longe, sabe que sempre pode ir além.</b> Assim surgiu a Silvio Iwata Prime, criada para transformar sua experiência de comprar, vender ou alugar um imóvel. Com uma forte cultura de investimento assertivo, nosso time de especialistas é focado em buscar o melhor equilíbrio na hora da escolha do seu imóvel. 
+            </p>
+            <p class="quemsomos" ><span style="color:#1d5539;">História:</span><br>
+          
+            Fundada no primeiro dia do mês de outubro de 1993, a Silvio Iwata Prime, empresa parceira da Imobiliária Silvio Iwata, atua no mercado imobiliário de Maringá e região. Criada com o intuito de oferecer a melhor experiência na hora da compra de um imóvel, sempre se destacou pelo atendimento personalizado e diferenciado; <b>fazemos vendas especiais para clientes especiais.</b>
+            </p>
+            <p class="quemsomos">
+            Nossos corretores são altamente qualificados, tendo como marca registrada a discrição e sigilo dos clientes, e um apurado faro de negócios.
+            </p>
+            <p class="quemsomos">
+            Em seus 28 anos, a Silvio Iwata Prime se caracteriza por ser uma empresa especializada em imóveis diferenciados, com total acompanhamento da compra ou venda de imóveis, desde o início até o final da transação.</p>
+            <p class="quemsomos">
+            A Silvio Iwata Prime é o próximo passo da experiência imobiliária.
+            </p>
           </div>
         </div>
       </div>
@@ -210,46 +202,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
         <div class="row">
-
             <div class="col-md-6 col-lg-6 mb-5 mb-lg-5"  data-aos="fade-up" data-aos-delay="200">
               <div class="team-member p-4">
                 <img src="{{asset('site/images/12JORDAO.jpg')}}" alt="Jordão Maio Filho - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
                 <div class="text">
                   <h2 style="color:#1d5539;" class="mb-2 font-weight-light  h4">Jordão Maio Filho</h2>
                   <span class="d-block mb-3 text-white-opacity-05"><a href="https://api.whatsapp.com/send?phone=5544999720237&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="" target="_blank"><img src="{{asset('site/images/whats.png')}}"> (44) 99972-0237</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> jordao@silvioiwataprime.com.br</span>
-                  <p>
-                    
-                  </p>
+                  <p></p>
                 </div>
               </div>
             </div>
-
             <div class="col-md-6 col-lg-6 mb-5 mb-lg-5"  data-aos="fade-up" data-aos-delay="300">
               <div class="team-member p-4">
                 <img src="{{asset('site/images/7NAKA.jpg')}}" alt="Edson Naka - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
                 <div class="text">
                   <h2 style="color:#1d5539;" class="mb-2 font-weight-light  h4">Edson Naka</h2>
                   <span class="d-block mb-3 text-white-opacity-05"><a href="https://api.whatsapp.com/send?phone=5544999720005&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."  target="_blank"><img src="{{asset('site/images/whats.png')}}"> (44) 99972-0005</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> edsonnaka@silvioiwataprime.com.br</span>
-                  <p>
-                    
-                  </p>
+                  <p></p>
                 </div>
-
               </div>
             </div>
-
             <div class="col-md-6 col-lg-6 mb-5 mb-lg-5"  data-aos="fade-up" data-aos-delay="400">
               <div class="team-member p-4">
-
                 <img src="{{asset('site/images/16VICENTE.jpg')}}" alt="Vicente Khouri - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-
                 <div class="text">
-
                   <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Vicente Khouri</h2>
                   <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544999613996&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99961-3996 </a>  <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> vicentekhouri@silvioiwataprime.com.br</span>
-                  <p>
-                
-                  </p>
+                  <p></p>
                 </div>
               </div>
             </div>
@@ -260,130 +239,99 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="site-section border-top bg-light">
       <div class="container">
-      <div class="row mb-5 justify-content-center" data-aos="fade-up">
-      <div class="col-md-7">
-      <div class="site-section-title text-center">
-      <h2>Lançamentos</h2>
-      </div>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
-      <div class="team-member p-4">
-      <img src="{{asset('site/images/8FELIPE.jpg')}}" alt="Felipe Rodrigues - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Felipe Rodrigues</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544998535000&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99853-5000 </a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> felipe.rodrigues@silvioiwata.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
-      <div class="team-member p-4">
-      <img src="{{asset('site/images/2ADRIANO.jpg')}}" alt="Adriano Marins - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light  h4">Adriano Marins</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a href="https://api.whatsapp.com/send?phone=5544991668558&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="" target="_blank"><img src="{{asset('site/images/whats.png')}}"> (44) 99166-8558</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> adriano.marins@silvioiwataprime.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="300">
-      <div class="team-member p-4">
-      <img src="{{asset('site/images/3ALESSANDRO.jpg')}}" alt="Alessandro Thomazini - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light  h4">Alessandro Thomazini</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a href="https://api.whatsapp.com/send?phone=5544999551155&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}"> (44) 99955-1155</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> alessandro.thomazini@silvioiwataprime.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
-      <div class="team-member p-4">
-      <img src="{{asset('site/images/5ANAPAULA.jpg')}}" alt="Ana Paula - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Ana Paula</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544991061308&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99106-1308 </a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> anapaula.santana@silvioiwataprime.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-	      <div class="team-member p-4">
-	      	<img src="{{asset('site/images/ANDERSON-COSTA.jpeg')}}" alt="Anderson Costa - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-	     	 <div class="text">
-	     		 <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Anderson Costa</h2>
-	     		 <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544991391818&amp;text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><img src="{{asset('site/images/whats.png')}}">(44) 99139-1818 </a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> anderson.costa@silvioiwataprime.com.br</span>
-	     		 <p> </p>	      			
-	    	  </div>
-	      </div>
-	    </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
-      <div class="team-member p-4">
-      <img src="{{asset('site/images/6ANNAKARLA.jpg')}}" alt="Anna Karla - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Anna Karla</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544998979799&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99897-9799 </a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> anna.vidotto@silvioiwataprime.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
-      <div class="team-member p-4">
-      <img src="{{asset('site/images/11JONATHAN.jpg')}}" alt="Jonathan Souza - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Jonatas de Souza</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544997035999&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99703-5999</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> jonatas.duarte@silvioiwataprime.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
-      <div class="team-member p-4">
-      <img src="{{asset('site/images/13LUIZFELIPE.jpg')}}" alt="Luiz Felipe - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Luiz Felipe</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544999124035&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99912-4035</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> luiz.felipe@silvioiwataprime.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
-      <div class="team-member p-4">
-      <img src="{{asset('site/images/14GUSTAVO.jpg')}}" alt="Luiz Gustavo - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-      <div class="text">
-      <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Luiz Gustavo</h2>
-      <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544998044465&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99804-4465</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> gustavo.bezerra@silvioiwata.com.br</span>
-      <p>
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
-        <div class="team-member p-4">
-          <img src="{{asset('site/images/17WAGNER.jpg')}}" alt="Wagner Bergamini - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
-          <div class="text">
-          <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Wagner Bergamini</h2>
-          <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544988084379&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 98808-4379</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> wagner.bergamini@silvioiwataprime.com.br</span>
-          <p>
-          </p>
+        <div class="row mb-5 justify-content-center" data-aos="fade-up">
+          <div class="col-md-7">
+            <div class="site-section-title text-center">
+              <h2>Lançamentos</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member p-4">
+              <img src="{{asset('site/images/8FELIPE.jpg')}}" alt="Felipe Rodrigues - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+              <div class="text">
+                <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Felipe Rodrigues</h2>
+                <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544998535000&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99853-5000 </a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> felipe.rodrigues@silvioiwata.com.br</span>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member p-4">
+              <img src="{{asset('site/images/3ALESSANDRO.jpg')}}" alt="Alessandro Thomazini - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+              <div class="text">
+                <h2 style="color:#1d5539;" class="mb-2 font-weight-light  h4">Alessandro Thomazini</h2>
+                  <span class="d-block mb-3 text-white-opacity-05"><a href="https://api.whatsapp.com/send?phone=5544999551155&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}"> (44) 99955-1155</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> alessandro.thomazini@silvioiwataprime.com.br</span>
+                  <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member p-4">
+              <img src="{{asset('site/images/5ANAPAULA.jpg')}}" alt="Ana Paula - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+              <div class="text">
+                <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Ana Paula</h2>
+                <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544991061308&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99106-1308 </a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> anapaula.santana@silvioiwataprime.com.br</span>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member p-4">
+              <img src="{{asset('site/images/6ANNAKARLA.jpg')}}" alt="Anna Karla - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+              <div class="text">
+                <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Anna Karla</h2>
+                <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544998979799&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99897-9799 </a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> anna.vidotto@silvioiwataprime.com.br</span>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member p-4">
+              <img src="{{asset('site/images/11JONATHAN.jpg')}}" alt="Jonathan Souza - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+              <div class="text">
+                <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Jonatas de Souza</h2>
+                <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544997035999&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99703-5999</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> jonatas.duarte@silvioiwataprime.com.br</span>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member p-4">
+              <img src="{{asset('site/images/13LUIZFELIPE.jpg')}}" alt="Luiz Felipe - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+              <div class="text">
+                <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Luiz Felipe</h2>
+                <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544999124035&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99912-4035</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> luiz.felipe@silvioiwataprime.com.br</span>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member p-4">
+              <img src="{{asset('site/images/14GUSTAVO.jpg')}}" alt="Luiz Gustavo - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+              <div class="text">
+                <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Luiz Gustavo</h2>
+                <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544998044465&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 99804-4465</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> gustavo.bezerra@silvioiwata.com.br</span>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member p-4">
+              <img src="{{asset('site/images/17WAGNER.jpg')}}" alt="Wagner Bergamini - Equipe Silvio Iwata Prime - Imóveis Comerciais e Residenciais em Maringá e Região" class="img-fluid rounded mb-4">
+              <div class="text">
+                <h2 style="color:#1d5539;" class="mb-2 font-weight-light h4">Wagner Bergamini</h2>
+                <span class="d-block mb-3 text-white-opacity-05"><a target="_blank" href="https://api.whatsapp.com/send?phone=5544988084379&text=Ol%C3%A1.%20Visitei%20o%20Site%20Silvio%20Iwata%20Prime%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="{{asset('site/images/whats.png')}}">(44) 98808-4379</a> <br> <img style="margin-top:-7px;" src="{{asset('site/images/mail.png')}}"> wagner.bergamini@silvioiwataprime.com.br</span>
+                <p></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-      </div>
-      </div>
-</div>
-    
-
+    </div>
     <div style="background-color:#1f1f1f;padding:15px;">
       <div class="container">
         <div class="row align-items-center">
@@ -397,44 +345,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
-    
-
     @include('site.templates.footer')
   </div>
 
   @include('site.templates.js')
   <script type="text/javascript">
-        var currentTime = new Date().getHours();
-        if (document.body) {
-            if (7 <= currentTime && currentTime < 18) {
-            document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa.jpeg')}})";
-            
-            }
-            else {
-                document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa-noite.jpeg')}})";
-            }
+    var currentTime = new Date().getHours();
+    if (document.body) {
+        if (7 <= currentTime && currentTime < 18) {
+        document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa.jpeg')}})";
+        
         }
-
-        //Get the button:
-      mybutton = document.getElementById("myBtn");
-
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
+        else {
+            document.getElementById('sitebg').style.backgroundImage="url({{asset('site/images/background-maringa-noite.jpeg')}})";
         }
-      }
+    }
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
       }
-    </script>
-    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/7d203a3f-e13e-4fd6-9a9d-81c4318bbde5-loader.js" ></script>
-    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/45033c5a-47d5-4705-985b-3c40258a1d37-loader.js" ></script>  </body>
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/7d203a3f-e13e-4fd6-9a9d-81c4318bbde5-loader.js" ></script>
+  <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/45033c5a-47d5-4705-985b-3c40258a1d37-loader.js" ></script>  </body>
+  </body> 
 </html>
